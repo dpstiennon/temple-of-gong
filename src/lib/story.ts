@@ -2,6 +2,8 @@ import type { StoryPage } from "./types";
 import startContent from "./content/start.md?raw";
 import shopContent from "./content/shop.md?raw";
 import shopkeeperContent from "./content/shopkeeper.md?raw";
+import kathmanduTempleContent from "./content/kathmandu-temple.md?raw";
+import templeMonksContent from "./content/temple-monks.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
@@ -10,6 +12,7 @@ export const storyPages: StoryPage[] = [
     content: startContent,
     links: [
       { targetPageId: "shop", text: "Go inside the shop" },
+      { targetPageId: "mountain-path", text: "Set off into the mountains" },
       { targetPageId: "kathmandu-temple", text: "Continue on your way" },
     ],
     dropZones: [],
@@ -28,6 +31,10 @@ export const storyPages: StoryPage[] = [
       {
         targetPageId: "kathmandu-temple",
         text: "Leave the shop and explore Kathmandu",
+      },
+      {
+        targetPageId: "mountain-path",
+        text: "Leave the shop and set off into the mountains",
       },
     ],
     dropZones: [
@@ -63,6 +70,39 @@ export const storyPages: StoryPage[] = [
       description:
         "A small brass bell from the gong shop. It hums faintly when you hold it to your ear. The shopkeeper insisted you show it to the monks.",
     },
+  },
+  {
+    id: "kathmandu-temple",
+    title: "The Great Temple",
+    content: kathmanduTempleContent,
+    links: [
+      { targetPageId: "shop", text: "Visit the gong shop" },
+      { targetPageId: "mountain-path", text: "Set off into the mountains" },
+    ],
+    dropZones: [
+      {
+        id: "show-postcard-monks",
+        description: "The monk waits patiently",
+        acceptsItemId: "postcard",
+        consumeItem: false,
+        hiddenLink: {
+          targetPageId: "temple-monks",
+          text: "Ask the monks about the temple in the photograph",
+          revealMessage:
+            "The monk's expression grows thoughtful as he studies the image on the postcard.",
+        },
+      },
+    ],
+  },
+  {
+    id: "temple-monks",
+    title: "The Monks' Warning",
+    content: templeMonksContent,
+    links: [
+      { targetPageId: "mountain-path", text: "Set off into the mountains" },
+      { targetPageId: "shop", text: "Visit the gong shop first" },
+    ],
+    dropZones: [],
   },
 ];
 
