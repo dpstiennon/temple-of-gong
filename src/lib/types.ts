@@ -25,6 +25,7 @@ export interface DropZone {
   acceptsItemId: string;
   hiddenLink: HiddenLink;
   rewardItem?: InventoryItem; // Optional item gained when activated
+  consumeItem?: boolean; // If false, item stays in inventory after drop (default: true)
 }
 
 // A page in the story

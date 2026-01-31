@@ -58,8 +58,10 @@
         const zone = matchingZone;
 
         if (draggedItem && zone) {
-            // Remove the item from inventory
-            removeItem(draggedItem.id);
+            // Remove the item from inventory unless consumeItem is false
+            if (zone.consumeItem !== false) {
+                removeItem(draggedItem.id);
+            }
 
             // Mark zone as activated
             activateZone(zone.id);
