@@ -1,0 +1,1 @@
+The titanium spork makes short work of the ancient mortar. You dig through the night, emerging into a forgotten storeroom. Jonah squeezes through behind you, grinning. "I knew you'd come through. Now let's get out of here before—" An alarm gong shatters the silence.

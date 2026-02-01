@@ -1,0 +1,1 @@
+You dig yourself out of the snowbank and look around. A hidden valley stretches before you, impossibly green, impossibly warm. Terraced gardens climb the hillsides. Golden spires gleam in the distance. You have found Shangri-La—the city the monks have kept hidden from the world with their avalanches.

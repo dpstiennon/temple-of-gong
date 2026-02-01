@@ -1,0 +1,1 @@
+You step through the outer gates into a courtyard of worn stone. Monks in saffron robes move silently between buildings, each wearing a small brass gong around their neck. One approaches, smiling, and produces a piece of chalk and a small blackboard.

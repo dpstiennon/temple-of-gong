@@ -1,0 +1,1 @@
+Alarm gongs ring throughout the complex. Monks pour from every building, furious. In the central temple, you see them winding the great idol—pulling chains, turning wheels. The brass monkey's cymbals begin to close. "Not the mountain path," Jonah gasps. "When those cymbals crash, avalanches. I have another way."

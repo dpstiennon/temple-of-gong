@@ -1,0 +1,1 @@
+Dawn comes too quickly. The monks arrive in solemn procession, gongs ringing. They drag you and Jonah to the cliff's edge. The last thing you see is the clouds parting below, revealing the valley floor impossibly far beneath.

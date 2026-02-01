@@ -7,6 +7,22 @@ import templeMonksContent from "./content/temple-monks.md?raw";
 import mountainPathContent from "./content/mountain-path.md?raw";
 import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
 import templeOfGongContent from "./content/temple-of-gong.md?raw";
+import templeCourtyardContent from "./content/temple-courtyard.md?raw";
+import templeTourContent from "./content/temple-tour.md?raw";
+import templeIdolContent from "./content/temple-idol.md?raw";
+import templeQuartersContent from "./content/temple-quarters.md?raw";
+import templeNightContent from "./content/temple-night.md?raw";
+import templePrisonContent from "./content/temple-prison.md?raw";
+import prisonWaitContent from "./content/prison-wait.md?raw";
+import prisonEscapeContent from "./content/prison-escape.md?raw";
+import rescueComicContent from "./content/rescue-comic.md?raw";
+import rescueFailContent from "./content/rescue-fail.md?raw";
+import templeEscapeContent from "./content/temple-escape.md?raw";
+import escapePathContent from "./content/escape-path.md?raw";
+import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
+import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
+import shangriLaContent from "./content/shangri-la.md?raw";
+import bellUsedContent from "./content/bell-used.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
@@ -130,7 +146,10 @@ export const storyPages: StoryPage[] = [
     title: "The Mountain Path",
     content: mountainPathContent,
     links: [
-      { targetPageId: "lost-in-mountains", text: "Wander deeper into the mountains" },
+      {
+        targetPageId: "lost-in-mountains",
+        text: "Wander deeper into the mountains",
+      },
       { targetPageId: "kathmandu-temple", text: "Return to Kathmandu" },
     ],
     dropZones: [
@@ -163,6 +182,216 @@ export const storyPages: StoryPage[] = [
     links: [
       { targetPageId: "temple-courtyard", text: "Enter the temple courtyard" },
     ],
+    dropZones: [],
+  },
+
+  // === TEMPLE OF GONG SEQUENCE ===
+
+  {
+    id: "temple-courtyard",
+    title: "The Temple Courtyard",
+    content: templeCourtyardContent,
+    links: [
+      { targetPageId: "temple-tour", text: "Accept the tour" },
+      { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
+    ],
+    dropZones: [
+      {
+        id: "ring-bell-courtyard",
+        description: "The monks watch you curiously",
+        acceptsItemId: "brass-bell",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "bell-used",
+          text: "The monks seize you",
+          revealMessage:
+            "The clear ring of the bell echoes across the courtyard. Every monk freezes.",
+        },
+      },
+    ],
+  },
+  {
+    id: "temple-tour",
+    title: "The Temple Tour",
+    content: templeTourContent,
+    links: [
+      { targetPageId: "temple-idol", text: "Enter the central temple" },
+      { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
+    ],
+    dropZones: [
+      {
+        id: "ring-bell-tour",
+        description: "The monks watch you curiously",
+        acceptsItemId: "brass-bell",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "bell-used",
+          text: "The monks seize you",
+          revealMessage:
+            "The clear ring of the bell echoes through the complex. Every monk freezes.",
+        },
+      },
+    ],
+  },
+  {
+    id: "temple-idol",
+    title: "The Idol of Gong",
+    content: templeIdolContent,
+    links: [
+      { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
+      { targetPageId: "temple-courtyard", text: "Return to the courtyard" },
+    ],
+    dropZones: [
+      {
+        id: "ring-bell-idol",
+        description: "The monks watch you curiously",
+        acceptsItemId: "brass-bell",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "bell-used",
+          text: "The monks seize you",
+          revealMessage:
+            "The bell's ring echoes beneath the giant brass monkey. Every monk freezes.",
+        },
+      },
+    ],
+  },
+  {
+    id: "temple-quarters",
+    title: "The Guest Quarters",
+    content: templeQuartersContent,
+    links: [
+      { targetPageId: "temple-night", text: "Sneak out at night" },
+      {
+        targetPageId: "temple-tour",
+        text: "Wait for morning and take the tour",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-night",
+    title: "Night in the Temple",
+    content: templeNightContent,
+    links: [
+      {
+        targetPageId: "rescue-comic",
+        text: "Distract the guard with something",
+      },
+      { targetPageId: "rescue-fail", text: "Try to sneak past the guard" },
+    ],
+    dropZones: [
+      {
+        id: "use-comic-book",
+        description: "A guard sits by the prison stairs, half-asleep",
+        acceptsItemId: "comic-book",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "rescue-comic",
+          text: "The guard is completely absorbed in the comic",
+          revealMessage:
+            "The guard's eyes go wide at the colorful pages. He's never seen anything like it.",
+        },
+      },
+    ],
+  },
+  {
+    id: "bell-used",
+    title: "Blasphemy!",
+    content: bellUsedContent,
+    links: [
+      { targetPageId: "temple-prison", text: "You are thrown into the cells" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-prison",
+    title: "The Prison Cells",
+    content: templePrisonContent,
+    links: [{ targetPageId: "prison-wait", text: "Wait and see what happens" }],
+    dropZones: [
+      {
+        id: "use-spork-prison",
+        description: "The stone walls are ancient, the mortar crumbling",
+        acceptsItemId: "titanium-spork",
+        consumeItem: false,
+        hiddenLink: {
+          targetPageId: "prison-escape",
+          text: "Dig through the wall",
+          revealMessage:
+            "The titanium spork bites into the ancient mortar. This might actually work.",
+        },
+      },
+    ],
+  },
+  {
+    id: "prison-wait",
+    title: "The End",
+    content: prisonWaitContent,
+    links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "prison-escape",
+    title: "Escape!",
+    content: prisonEscapeContent,
+    links: [{ targetPageId: "temple-escape", text: "Run!" }],
+    dropZones: [],
+  },
+  {
+    id: "rescue-comic",
+    title: "The Distraction",
+    content: rescueComicContent,
+    links: [{ targetPageId: "temple-escape", text: "Run!" }],
+    dropZones: [],
+  },
+  {
+    id: "rescue-fail",
+    title: "Caught!",
+    content: rescueFailContent,
+    links: [
+      { targetPageId: "temple-prison", text: "You are thrown into the cells" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-escape",
+    title: "The Alarm",
+    content: templeEscapeContent,
+    links: [
+      { targetPageId: "escape-path", text: "Run down the mountain path" },
+      { targetPageId: "escape-zeppelin", text: "Follow Jonah's plan" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "escape-path",
+    title: "The End",
+    content: escapePathContent,
+    links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "escape-zeppelin",
+    title: "The Pocket Zeppelin",
+    content: escapeZeppelinContent,
+    links: [{ targetPageId: "zeppelin-fall", text: "Climb aboard" }],
+    dropZones: [],
+  },
+  {
+    id: "zeppelin-fall",
+    title: "The Fall",
+    content: zeppelinFallContent,
+    links: [{ targetPageId: "shangri-la", text: "Look around" }],
+    dropZones: [],
+  },
+  {
+    id: "shangri-la",
+    title: "Shangri-La",
+    content: shangriLaContent,
+    links: [],
     dropZones: [],
   },
 ];

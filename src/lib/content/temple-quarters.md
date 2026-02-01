@@ -1,0 +1,1 @@
+The monks offer you a simple cell—a straw mat, a wool blanket, a window overlooking the clouds. The monk writes on his blackboard: "REST. PRAYER TIME AT DAWN." He bows and leaves you alone. Night falls quickly at this altitude.

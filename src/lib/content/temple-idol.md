@@ -1,0 +1,1 @@
+The central hall takes your breath away. A fifty-foot brass monkey dominates the space, seated in meditation, holding two enormous cymbals apart in its outstretched hands. The idol of Gong, their monkey god. Somewhere in the walls, you hear the faint creak of ancient mechanisms.

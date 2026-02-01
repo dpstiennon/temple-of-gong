@@ -1,0 +1,1 @@
+You slide the comic book under the guard's nose. His eyes widen—he's never seen anything like it. While he puzzles over the colorful panels, you lift the iron key from his belt. Jonah is free within moments. "Brilliant," he whispers. "Now run."

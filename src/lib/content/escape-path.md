@@ -1,0 +1,1 @@
+You sprint down the mountain path, lungs burning. Behind you, a sound like the world ending—the cymbals crashing together. Then the rumbling starts. You look up to see the mountainside coming down. There is nowhere to run.

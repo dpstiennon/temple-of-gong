@@ -1,0 +1,1 @@
+You try to sneak past the guard, but he spots you immediately. Before you can react, monks swarm from the shadows. They drag you down to the cells and throw you in beside Jonah. "Well," he says, "at least we're together now."

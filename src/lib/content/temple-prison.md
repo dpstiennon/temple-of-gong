@@ -1,0 +1,1 @@
+The cell is cold and dark. Jonah sits in the adjacent cell, looking surprisingly unsurprised to see you. "Let me guess," he says. "The bell?" He sighs. "They really hate bells. Something about blasphemy against the monkey god. They're going to throw us off the cliff tomorrow."

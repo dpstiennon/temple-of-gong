@@ -1,0 +1,1 @@
+You ring the brass bell. The clear, pure tone cuts through the air—and every monk in earshot freezes. Their faces twist with horror, then rage. Before you can understand what's happening, they seize you and drag you toward the stairs leading down, down, into the darkness beneath the temple.

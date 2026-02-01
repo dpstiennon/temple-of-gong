@@ -1,0 +1,1 @@
+You creep through the moonlit corridors, avoiding the few monks still awake. Near the back of the complex, stone stairs descend into darkness. From below, you hear a familiar voice humming tunelessly. Jonah.
