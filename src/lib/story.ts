@@ -6,6 +6,7 @@ import kathmanduTempleContent from "./content/kathmandu-temple.md?raw";
 import templeMonksContent from "./content/temple-monks.md?raw";
 import mountainPathContent from "./content/mountain-path.md?raw";
 import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
+import templeOfGongContent from "./content/temple-of-gong.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
@@ -154,6 +155,15 @@ export const storyPages: StoryPage[] = [
     links: [],
     dropZones: [],
     ending: "death",
+  },
+  {
+    id: "temple-of-gong",
+    title: "The Temple of Gong",
+    content: templeOfGongContent,
+    links: [
+      { targetPageId: "temple-courtyard", text: "Enter the temple courtyard" },
+    ],
+    dropZones: [],
   },
 ];
 
