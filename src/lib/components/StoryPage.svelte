@@ -1,9 +1,17 @@
 <script lang="ts">
-    import type { StoryPage as StoryPageType } from "../types";
-    import { addItem, hasItem } from "../inventory.svelte";
+    import type { StoryPage as StoryPageType, InventoryItem } from "../types";
+    import { addItem, hasItem, resetInventory } from "../inventory.svelte";
+    import { resetActivatedZones } from "../dragState.svelte";
+    import { navigateTo } from "../router.svelte";
     import { parseMarkdown } from "../markdown";
     import PageLink from "./PageLink.svelte";
     import DropZone from "./DropZone.svelte";
+
+    function handleRestart() {
+        resetInventory();
+        resetActivatedZones();
+        navigateTo("start");
+    }
 
     interface Props {
         page: StoryPageType;
@@ -11,23 +19,28 @@
 
     let { page }: Props = $props();
 
-    // Track if we've shown the item pickup message for this page visit
-    let pickedUpItem = $state(false);
+    // Track items picked up on this page visit
+    let pickedUpItems = $state<InventoryItem[]>([]);
     let currentPageId = $state(page.id);
 
     // Reset pickup state when page changes
     $effect(() => {
         if (page.id !== currentPageId) {
-            pickedUpItem = false;
+            pickedUpItems = [];
             currentPageId = page.id;
         }
     });
 
-    // Automatically pick up item if present and not already in inventory
+    // Automatically pick up items if present and not already in inventory
     $effect(() => {
-        if (page.itemToFind && !hasItem(page.itemToFind.id) && !pickedUpItem) {
-            addItem(page.itemToFind);
-            pickedUpItem = true;
+        if (page.itemsToFind && pickedUpItems.length === 0) {
+            const newItems = page.itemsToFind.filter((item) => !hasItem(item.id));
+            if (newItems.length > 0) {
+                for (const item of newItems) {
+                    addItem(item);
+                }
+                pickedUpItems = newItems;
+            }
         }
     });
 </script>
@@ -41,10 +54,14 @@
         {@html parseMarkdown(page.content)}
     </div>
 
-    {#if pickedUpItem && page.itemToFind}
-        <div class="item-found">
-            <p>You found: <strong>{page.itemToFind.name}</strong></p>
-            <p class="item-description">{page.itemToFind.description}</p>
+    {#if pickedUpItems.length > 0}
+        <div class="items-found">
+            {#each pickedUpItems as item (item.id)}
+                <div class="item-found">
+                    <p>You found: <strong>{item.name}</strong></p>
+                    <p class="item-description">{item.description}</p>
+                </div>
+            {/each}
         </div>
     {/if}
 
@@ -56,11 +73,24 @@
         </section>
     {/if}
 
-    <nav class="choices">
-        {#each page.links as link}
-            <PageLink targetPageId={link.targetPageId} text={link.text} />
-        {/each}
-    </nav>
+    {#if page.ending}
+        {#if page.ending === "death"}
+            <div class="death-screen">
+                <span class="death-text">YOU DIED</span>
+            </div>
+        {/if}
+        <nav class="choices">
+            <button class="restart-link" onclick={handleRestart}>
+                Start over
+            </button>
+        </nav>
+    {:else}
+        <nav class="choices">
+            {#each page.links as link}
+                <PageLink targetPageId={link.targetPageId} text={link.text} />
+            {/each}
+        </nav>
+    {/if}
 </article>
 
 <style>
@@ -116,12 +146,18 @@
         font-style: italic;
     }
 
+    .items-found {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
     .item-found {
         background: linear-gradient(135deg, #2d4a3e 0%, #1d3a2e 100%);
         border: 1px solid #3d6a5e;
         border-radius: 8px;
         padding: 1rem 1.25rem;
-        margin-bottom: 1.5rem;
     }
 
     .item-found p {
@@ -150,5 +186,69 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .restart-link {
+        display: block;
+        width: 100%;
+        padding: 0.875rem 1.25rem;
+        background: linear-gradient(135deg, #4a3a2d 0%, #3a2a1d 100%);
+        border: 1px solid #6a5a3d;
+        border-radius: 8px;
+        color: #d8c8a8;
+        font-size: 1rem;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .restart-link:hover {
+        background: linear-gradient(135deg, #6a5a3d 0%, #5a4a2d 100%);
+        border-color: #8a7a5d;
+        transform: translateX(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .restart-link:active {
+        transform: translateX(2px);
+    }
+
+    .death-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0;
+        margin: 2rem 0;
+    }
+
+    .death-text {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.4em;
+        color: #8b0000;
+        text-shadow:
+            0 0 20px rgba(139, 0, 0, 0.5),
+            0 0 40px rgba(139, 0, 0, 0.3),
+            0 0 60px rgba(139, 0, 0, 0.2);
+        animation: death-fade-in 3s ease-out forwards;
+        opacity: 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    @keyframes death-fade-in {
+        0% {
+            opacity: 0;
+            letter-spacing: 0.6em;
+            filter: blur(4px);
+        }
+        50% {
+            opacity: 0.8;
+            filter: blur(1px);
+        }
+        100% {
+            opacity: 1;
+            letter-spacing: 0.4em;
+            filter: blur(0);
+        }
     }
 </style>

@@ -28,6 +28,9 @@ export interface DropZone {
   consumeItem?: boolean; // If false, item stays in inventory after drop (default: true)
 }
 
+// Ending type for terminal pages
+export type EndingType = "death" | "complete";
+
 // A page in the story
 export interface StoryPage {
   id: string;
@@ -35,5 +38,6 @@ export interface StoryPage {
   content: string;
   links: PageLink[];
   dropZones: DropZone[];
-  itemToFind?: InventoryItem; // Item automatically picked up when visiting
+  itemsToFind?: InventoryItem[]; // Items automatically picked up when visiting
+  ending?: EndingType; // If set, this is a terminal page with a restart link
 }
