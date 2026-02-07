@@ -299,11 +299,9 @@ export const storyPages: StoryPage[] = [
   },
   {
     id: "temple-side-building",
-    title: "The Side Building",
+    title: "The Side Buildings",
     content: templeSideBuildingContent,
-    links: [
-      { targetPageId: "temple-courtyard", text: "Return to the courtyard" },
-    ],
+    links: [{ targetPageId: "temple-prison", text: "Talk to Jonah" }],
     dropZones: [],
   },
   {
