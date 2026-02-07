@@ -1,0 +1,1 @@
+You step out from the rocks, hands raised in what you hope is a universal gesture of peace. The farmers look up from their terraces. For a moment, they seem merely curious—then one of them raises a horn to his lips and blows a long, mournful note. Within minutes, soldiers in golden armor surround you. They do not speak. They do not need to. The spears speak clearly enough.

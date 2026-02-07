@@ -1,0 +1,1 @@
+The Festival of Silence. You overhear the words from passing celebrants—though "silence" seems ironic given the crowds. Everyone wears a mask: monkeys, demons, serene bodhisattvas, grotesque spirits. No one speaks above a whisper. The gongs that hang everywhere remain untouched, waiting. You realize that without a mask, you'll be spotted immediately. You need to find one.

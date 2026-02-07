@@ -1,0 +1,1 @@
+A vendor's stall stands unattended, its owner drawn away by some commotion down the street. Masks hang from hooks—dozens of them, painted wood and lacquered paper. Your hand closes around a monkey face, red and gold with bared teeth. You slip it on and melt into the crowd before the vendor returns.

@@ -23,6 +23,17 @@ import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
 import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
 import shangriLaContent from "./content/shangri-la.md?raw";
 import bellUsedContent from "./content/bell-used.md?raw";
+// Shangri-La sequence
+import shangriDeclareContent from "./content/shangri-declare.md?raw";
+import shangriHideContent from "./content/shangri-hide.md?raw";
+import shangriFestivalContent from "./content/shangri-festival.md?raw";
+import shangriMaskStallContent from "./content/shangri-mask-stall.md?raw";
+import shangriMaskStorageContent from "./content/shangri-mask-storage.md?raw";
+import shangriNoMaskContent from "./content/shangri-no-mask.md?raw";
+import shangriMaskedContent from "./content/shangri-masked.md?raw";
+import shangriCloseCallContent from "./content/shangri-close-call.md?raw";
+import shangriDorjeContent from "./content/shangri-dorje.md?raw";
+import shangriMeiContent from "./content/shangri-mei.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
@@ -387,10 +398,137 @@ export const storyPages: StoryPage[] = [
     links: [{ targetPageId: "shangri-la", text: "Look around" }],
     dropZones: [],
   },
+
+  // === SHANGRI-LA SEQUENCE ===
+
   {
     id: "shangri-la",
     title: "Shangri-La",
     content: shangriLaContent,
+    links: [
+      { targetPageId: "shangri-declare", text: "Approach the city openly" },
+      { targetPageId: "shangri-hide", text: "Hide and observe" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-declare",
+    title: "The End",
+    content: shangriDeclareContent,
+    links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "shangri-hide",
+    title: "The Hidden Valley",
+    content: shangriHideContent,
+    links: [
+      {
+        targetPageId: "shangri-festival",
+        text: "Wait for nightfall and approach the festival",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-festival",
+    title: "The Festival of Silence",
+    content: shangriFestivalContent,
+    links: [
+      {
+        targetPageId: "shangri-mask-stall",
+        text: "Steal a mask from an unattended stall",
+      },
+      {
+        targetPageId: "shangri-mask-storage",
+        text: "Sneak into the temple's costume storage",
+      },
+      {
+        targetPageId: "shangri-no-mask",
+        text: "Try to blend in without a mask",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-mask-stall",
+    title: "The Stolen Mask",
+    content: shangriMaskStallContent,
+    links: [
+      { targetPageId: "shangri-masked", text: "Join the festival crowd" },
+    ],
+    dropZones: [],
+    itemsToFind: [
+      {
+        id: "festival-mask",
+        name: "A festival mask",
+        description:
+          "A monkey mask of painted wood and lacquered paper, red and gold with bared teeth. It smells of incense and old festivals.",
+      },
+    ],
+  },
+  {
+    id: "shangri-mask-storage",
+    title: "The Temple Storage",
+    content: shangriMaskStorageContent,
+    links: [
+      { targetPageId: "shangri-masked", text: "Join the festival crowd" },
+    ],
+    dropZones: [],
+    itemsToFind: [
+      {
+        id: "festival-mask",
+        name: "A festival mask",
+        description:
+          "A demon mask with a snarling face, carved wood painted in fierce reds and blacks. It feels heavier than it should.",
+      },
+    ],
+  },
+  {
+    id: "shangri-no-mask",
+    title: "The End",
+    content: shangriNoMaskContent,
+    links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "shangri-masked",
+    title: "Among the Masks",
+    content: shangriMaskedContent,
+    links: [
+      {
+        targetPageId: "shangri-close-call",
+        text: "Continue through the crowd",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-close-call",
+    title: "The Patrol",
+    content: shangriCloseCallContent,
+    links: [
+      {
+        targetPageId: "shangri-dorje",
+        text: "Duck into the gong-maker's shop",
+      },
+      { targetPageId: "shangri-mei", text: "Dive into the cistern" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-dorje",
+    title: "The Gong-Maker",
+    content: shangriDorjeContent,
+    links: [],
+    dropZones: [],
+  },
+  {
+    id: "shangri-mei",
+    title: "The Cistern",
+    content: shangriMeiContent,
     links: [],
     dropZones: [],
   },
