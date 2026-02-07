@@ -10,6 +10,7 @@ import mountainPathContent from "./content/mountain-path.md?raw";
 import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
 import templeOfGongContent from "./content/temple-of-gong.md?raw";
 import templeCourtyardContent from "./content/temple-courtyard.md?raw";
+import templeSideBuildingContent from "./content/temple-side-building.md?raw";
 import templeTourContent from "./content/temple-tour.md?raw";
 import templeIdolContent from "./content/temple-idol.md?raw";
 import templeQuartersContent from "./content/temple-quarters.md?raw";
@@ -221,7 +222,7 @@ export const storyPages: StoryPage[] = [
           targetPageId: "temple-of-gong",
           text: "Follow the map to the Temple of Gong",
           revealMessage:
-            "You unfold the yellowed paper and trace the route with your finger. There—the fork to the right, then up through the snow line. The monkey face marking is unmistakable.",
+            "You unfold the yellowed paper and trace the route with your finger. There—the fork to the right, then up through the snow line.",
         },
       },
     ],
@@ -251,8 +252,9 @@ export const storyPages: StoryPage[] = [
     title: "The Temple Courtyard",
     content: templeCourtyardContent,
     links: [
-      { targetPageId: "temple-tour", text: "Accept the tour" },
-      { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
+      { targetPageId: "temple-quarters", text: "Stay the night" },
+      { targetPageId: "temple-tour", text: "Explore the main building" },
+      { targetPageId: "temple-side-building", text: "Explore the unremarkable side building" },
     ],
     dropZones: [
       {
@@ -268,6 +270,15 @@ export const storyPages: StoryPage[] = [
         },
       },
     ],
+  },
+  {
+    id: "temple-side-building",
+    title: "The Side Building",
+    content: templeSideBuildingContent,
+    links: [
+      { targetPageId: "temple-courtyard", text: "Return to the courtyard" },
+    ],
+    dropZones: [],
   },
   {
     id: "temple-tour",

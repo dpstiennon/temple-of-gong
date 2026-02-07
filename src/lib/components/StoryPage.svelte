@@ -138,6 +138,14 @@
         color: #e0e0e0;
     }
 
+    .content :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 1rem 0;
+        display: block;
+    }
+
     .content :global(blockquote) {
         border-left: 3px solid #c4a35a;
         margin: 1rem 0;
