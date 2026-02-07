@@ -11,7 +11,6 @@ import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
 import templeOfGongContent from "./content/temple-of-gong.md?raw";
 import templeCourtyardContent from "./content/temple-courtyard.md?raw";
 import templeSideBuildingContent from "./content/temple-side-building.md?raw";
-import templeTourContent from "./content/temple-tour.md?raw";
 import templeIdolContent from "./content/temple-idol.md?raw";
 import templeQuartersContent from "./content/temple-quarters.md?raw";
 import templeNightContent from "./content/temple-night.md?raw";
@@ -253,7 +252,7 @@ export const storyPages: StoryPage[] = [
     content: templeCourtyardContent,
     links: [
       { targetPageId: "temple-quarters", text: "Stay the night" },
-      { targetPageId: "temple-tour", text: "Explore the main building" },
+      { targetPageId: "temple-idol", text: "Explore the main building" },
       { targetPageId: "temple-side-building", text: "Explore the unremarkable side building" },
     ],
     dropZones: [
@@ -279,29 +278,6 @@ export const storyPages: StoryPage[] = [
       { targetPageId: "temple-courtyard", text: "Return to the courtyard" },
     ],
     dropZones: [],
-  },
-  {
-    id: "temple-tour",
-    title: "The Temple Tour",
-    content: templeTourContent,
-    links: [
-      { targetPageId: "temple-idol", text: "Enter the central temple" },
-      { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
-    ],
-    dropZones: [
-      {
-        id: "ring-bell-tour",
-        description: "The monks watch you curiously",
-        acceptsItemId: "brass-bell",
-        consumeItem: true,
-        hiddenLink: {
-          targetPageId: "bell-used",
-          text: "The monks seize you",
-          revealMessage:
-            "The clear ring of the bell echoes through the complex. Every monk freezes.",
-        },
-      },
-    ],
   },
   {
     id: "temple-idol",
@@ -333,8 +309,8 @@ export const storyPages: StoryPage[] = [
     links: [
       { targetPageId: "temple-night", text: "Sneak out at night" },
       {
-        targetPageId: "temple-tour",
-        text: "Wait for morning and take the tour",
+        targetPageId: "temple-idol",
+        text: "Wait for morning and explore the temple",
       },
     ],
     dropZones: [],

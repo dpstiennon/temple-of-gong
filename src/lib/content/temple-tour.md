@@ -1,1 +1,0 @@
-The monk leads you through the complex. Gongs hang everywhere—from eaves, from doorways, from the branches of ancient trees. Brass and bronze, large and small, silent for now. The monk gestures proudly toward the central temple ahead.
