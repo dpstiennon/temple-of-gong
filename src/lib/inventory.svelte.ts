@@ -5,26 +5,9 @@ const STORAGE_KEY = "temple-of-gong-inventory";
 
 const STARTING_ITEMS: InventoryItem[] = [
   {
-    id: "postcard",
-    name: "The Postcard that Started It All",
-    description:
-      'Shows a Himalayan temple, and a hastily scrawled message of "Send Help -- Jonah".',
-  },
-  {
-    id: "comic-book",
-    name: "A comic book",
-    description: "A well-worn comic book about a hero who talks to animals.",
-  },
-  {
-    id: "matches",
-    name: "A box of matches",
-    description: "A small box of wooden matches. Most are still unused.",
-  },
-  {
-    id: "spork",
-    name: "A titanium spork",
-    description:
-      "A surprisingly sturdy titanium spork. Good for eating... or adventure.",
+    id: "mailbox-key",
+    name: "A mailbox key",
+    description: "A small brass key for your mailbox. Nothing special about it.",
   },
 ];
 

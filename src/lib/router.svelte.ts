@@ -1,6 +1,6 @@
 // Hash-based router using Svelte 5 runes
 
-let currentPageId = $state('start');
+let currentPageId = $state('home');
 
 // Initialize from hash on load
 function initFromHash() {
@@ -8,7 +8,7 @@ function initFromHash() {
   if (hash && hash.startsWith('#/')) {
     currentPageId = hash.slice(2);
   } else {
-    window.location.hash = '#/start';
+    window.location.hash = '#/home';
   }
 }
 

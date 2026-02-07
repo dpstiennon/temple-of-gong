@@ -1,5 +1,7 @@
 import type { StoryPage } from "./types";
+import homeContent from "./content/home.md?raw";
 import startContent from "./content/start.md?raw";
+import kathmanduStreetsContent from "./content/kathmandu-streets.md?raw";
 import shopContent from "./content/shop.md?raw";
 import shopkeeperContent from "./content/shopkeeper.md?raw";
 import kathmanduTempleContent from "./content/kathmandu-temple.md?raw";
@@ -37,23 +39,70 @@ import shangriMeiContent from "./content/shangri-mei.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
+    id: "home",
+    title: "An Ordinary Day",
+    content: homeContent,
+    links: [],
+    dropZones: [
+      {
+        id: "open-mailbox",
+        description: "Your mailbox awaits",
+        acceptsItemId: "mailbox-key",
+        consumeItem: true,
+        rewardItem: {
+          id: "postcard",
+          name: "The mysterious postcard",
+          description:
+            "A worn postcard from Kathmandu. The image shows a temple high in the Himalayas with an immense golden gong. On the back, in Jonah's handwriting: 'Send Help'.",
+        },
+        hiddenLink: {
+          targetPageId: "start",
+          text: "Book the first flight to Kathmandu",
+          revealMessage:
+            "Inside the mailbox, a single postcard. The stamp is faded, the edges worn soft. The postmark reads Kathmandu, Nepal. You flip it over. Just two words in Jonah's handwriting: Send Help.",
+        },
+      },
+    ],
+  },
+  {
     id: "start",
-    title: "A Mysterious Postcard",
+    title: "Kathmandu",
     content: startContent,
+    links: [
+      { targetPageId: "kathmandu-streets", text: "Head into the streets" },
+    ],
+    dropZones: [],
+    itemsToFind: [
+      {
+        id: "comic-book",
+        name: "A comic book",
+        description:
+          "A well-worn comic book about a hero who talks to animals.",
+      },
+      {
+        id: "matches",
+        name: "A box of matches",
+        description:
+          "A small box of wooden matches. Most are still unused.",
+      },
+      {
+        id: "spork",
+        name: "A titanium spork",
+        description:
+          "A surprisingly sturdy titanium spork. Good for eating... or adventure.",
+      },
+    ],
+  },
+  {
+    id: "kathmandu-streets",
+    title: "The Streets of Kathmandu",
+    content: kathmanduStreetsContent,
     links: [
       { targetPageId: "shop", text: "Go inside the shop" },
       { targetPageId: "mountain-path", text: "Set off into the mountains" },
       { targetPageId: "kathmandu-temple", text: "Continue on your way" },
     ],
     dropZones: [],
-    itemsToFind: [
-      {
-        id: "postcard",
-        name: "The mysterious postcard",
-        description:
-          "A worn postcard from Kathmandu. The image shows a temple high in the Himalayas with an immense golden gong. On the back, in Jonah's handwriting: 'Send Help'.",
-      },
-    ],
   },
   {
     id: "shop",

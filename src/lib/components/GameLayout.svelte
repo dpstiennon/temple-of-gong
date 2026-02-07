@@ -91,7 +91,7 @@
                     The page "{router.currentPageId}" doesn't exist in this
                     story.
                 </p>
-                <a href="#/start">Return to the beginning</a>
+                <a href="#/home">Return to the beginning</a>
             </div>
         {/if}
     </main>

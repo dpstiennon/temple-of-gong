@@ -10,7 +10,7 @@
     function handleRestart() {
         resetInventory();
         resetActivatedZones();
-        navigateTo("start");
+        navigateTo("home");
     }
 
     interface Props {
