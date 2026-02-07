@@ -10,10 +10,11 @@
         isZoneActivated,
     } from "../dragState.svelte";
     import { removeItem, addItem } from "../inventory.svelte";
-    import type { DropZone } from "../types";
+    import type { DropZone, InventoryItem } from "../types";
 
     let currentPage = $derived(getPage(router.currentPageId));
     let isOver = $state(false);
+    let storyAreaEl: HTMLElement;
 
     // Find a matching drop zone on the current page for the dragged item
     function findMatchingZone(): DropZone | null {
@@ -50,6 +51,21 @@
         }
     }
 
+    function applyDrop(droppedItem: InventoryItem, zone: DropZone) {
+        // Remove the item from inventory unless consumeItem is false
+        if (zone.consumeItem !== false) {
+            removeItem(droppedItem.id);
+        }
+
+        // Mark zone as activated
+        activateZone(zone.id);
+
+        // Add reward item if any
+        if (zone.rewardItem) {
+            addItem(zone.rewardItem);
+        }
+    }
+
     function handleDrop(e: DragEvent) {
         e.preventDefault();
         isOver = false;
@@ -58,24 +74,46 @@
         const zone = matchingZone;
 
         if (draggedItem && zone) {
-            // Remove the item from inventory unless consumeItem is false
-            if (zone.consumeItem !== false) {
-                removeItem(draggedItem.id);
-            }
-
-            // Mark zone as activated
-            activateZone(zone.id);
-
-            // Add reward item if any
-            if (zone.rewardItem) {
-                addItem(zone.rewardItem);
-            }
+            applyDrop(draggedItem, zone);
         }
     }
+
+    // Find a matching zone for a specific item (used by touch drop)
+    function findZoneForItem(item: InventoryItem): DropZone | null {
+        if (!currentPage) return null;
+        const zones = currentPage.dropZones || [];
+        return (
+            zones.find(
+                (zone) =>
+                    zone.acceptsItemId === item.id && !isZoneActivated(zone.id),
+            ) || null
+        );
+    }
+
+    // Listen for custom touchdrop events dispatched by InventoryItem
+    $effect(() => {
+        if (!storyAreaEl) return;
+
+        function handleTouchDrop(e: Event) {
+            const detail = (e as CustomEvent).detail;
+            if (!detail?.item) return;
+
+            const zone = findZoneForItem(detail.item);
+            if (zone) {
+                applyDrop(detail.item, zone);
+            }
+        }
+
+        storyAreaEl.addEventListener("touchdrop", handleTouchDrop);
+        return () => {
+            storyAreaEl.removeEventListener("touchdrop", handleTouchDrop);
+        };
+    });
 </script>
 
 <div class="game-layout">
     <main
+        bind:this={storyAreaEl}
         class="story-area"
         ondragover={handleDragOver}
         ondragleave={handleDragLeave}

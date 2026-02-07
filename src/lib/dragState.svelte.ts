@@ -1,14 +1,17 @@
 // Drag-and-drop state management
-import type { InventoryItem } from './types';
+import type { InventoryItem } from "./types";
 
-const ACTIVATED_ZONES_KEY = 'temple-of-gong-activated-zones';
+const ACTIVATED_ZONES_KEY = "temple-of-gong-activated-zones";
 
 // Currently dragged item
 let draggedItem = $state<InventoryItem | null>(null);
 
+// Touch drag position (for visual feedback during touch drags)
+let touchPos = $state<{ x: number; y: number } | null>(null);
+
 // Set of activated zone IDs (persisted to session storage)
 function loadActivatedZones(): Set<string> {
-  if (typeof window === 'undefined') return new Set();
+  if (typeof window === "undefined") return new Set();
 
   const stored = sessionStorage.getItem(ACTIVATED_ZONES_KEY);
   if (stored) {
@@ -22,7 +25,7 @@ function loadActivatedZones(): Set<string> {
 }
 
 function saveActivatedZones(zones: Set<string>) {
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     sessionStorage.setItem(ACTIVATED_ZONES_KEY, JSON.stringify([...zones]));
   }
 }
@@ -35,6 +38,15 @@ export function startDrag(item: InventoryItem) {
 
 export function endDrag() {
   draggedItem = null;
+  touchPos = null;
+}
+
+export function updateTouchPos(x: number, y: number) {
+  touchPos = { x, y };
+}
+
+export function getTouchPos(): { x: number; y: number } | null {
+  return touchPos;
 }
 
 export function getDraggedItem(): InventoryItem | null {
@@ -61,5 +73,8 @@ export const dragState = {
   },
   get activatedZones() {
     return activatedZones;
-  }
+  },
+  get touchPos() {
+    return touchPos;
+  },
 };
