@@ -253,7 +253,10 @@ export const storyPages: StoryPage[] = [
     links: [
       { targetPageId: "temple-quarters", text: "Stay the night" },
       { targetPageId: "temple-idol", text: "Explore the main building" },
-      { targetPageId: "temple-side-building", text: "Explore the unremarkable side building" },
+      {
+        targetPageId: "temple-side-building",
+        text: "Explore the unremarkable side building",
+      },
     ],
     dropZones: [
       {
@@ -285,7 +288,10 @@ export const storyPages: StoryPage[] = [
     content: templeIdolContent,
     links: [
       { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
-      { targetPageId: "temple-courtyard", text: "Return to the courtyard" },
+      {
+        targetPageId: "temple-side-building",
+        text: "Explore the side buildings",
+      },
     ],
     dropZones: [
       {
