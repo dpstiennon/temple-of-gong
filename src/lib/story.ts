@@ -82,8 +82,7 @@ export const storyPages: StoryPage[] = [
       {
         id: "matches",
         name: "A box of matches",
-        description:
-          "A small box of wooden matches. Most are still unused.",
+        description: "A small box of wooden matches. Most are still unused.",
       },
       {
         id: "spork",
@@ -100,7 +99,7 @@ export const storyPages: StoryPage[] = [
     links: [
       { targetPageId: "shop", text: "Go inside the shop" },
       { targetPageId: "mountain-path", text: "Set off into the mountains" },
-      { targetPageId: "kathmandu-temple", text: "Continue on your way" },
+      { targetPageId: "kathmandu-temple", text: "Continue to the temple" },
     ],
     dropZones: [],
   },

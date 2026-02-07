@@ -4,8 +4,4 @@ The path climbs steadily northward, switchbacking up a ridge that offers increas
 
 You pause to catch your breath. The air is thinner here, sharper. Your lungs work harder than they should.
 
-The problem, of course, is that you have no idea where you're going. The path branches ahead—one fork climbing higher into the snow, another descending into a valley thick with rhododendrons. There's no signage. No helpful monks. Just you, the mountains, and a vague sense that Jonah is out here somewhere, waiting.
-
-You feel bold. Intrepid, even. These are good feelings to have when you're hopelessly lost in foreign mountains with inadequate supplies and no backup plan.
-
-The wind picks up, and somewhere far above, a bird of prey circles lazily against the impossible blue.
+The problem, of course, is that you have no idea where you're going.
