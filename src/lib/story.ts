@@ -313,10 +313,10 @@ export const storyPages: StoryPage[] = [
     title: "The Guest Quarters",
     content: templeQuartersContent,
     links: [
-      { targetPageId: "temple-night", text: "Sneak out at night" },
+      { targetPageId: "temple-night", text: "Explore the temple at night" },
       {
-        targetPageId: "temple-idol",
-        text: "Wait for morning and explore the temple",
+        targetPageId: "temple-festival",
+        text: "Wait for the Festival of Ten Thousand Gongs",
       },
     ],
     dropZones: [],
