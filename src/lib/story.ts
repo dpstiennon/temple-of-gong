@@ -10,6 +10,7 @@ import mountainPathContent from "./content/mountain-path.md?raw";
 import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
 import templeOfGongContent from "./content/temple-of-gong.md?raw";
 import templeCourtyardContent from "./content/temple-courtyard.md?raw";
+import templeCourtyardPostcardContent from "./content/temple-courtyard-postcard.md?raw";
 import templeSideBuildingContent from "./content/temple-side-building.md?raw";
 import templeIdolContent from "./content/temple-idol.md?raw";
 import templeQuartersContent from "./content/temple-quarters.md?raw";
@@ -271,7 +272,30 @@ export const storyPages: StoryPage[] = [
             "The clear ring of the bell echoes across the courtyard. Every monk freezes.",
         },
       },
+      {
+        id: "show-postcard-tenzin",
+        description: "Tenzin watches you with that fixed smile",
+        acceptsItemId: "postcard",
+        consumeItem: false,
+        hiddenLink: {
+          targetPageId: "temple-courtyard-postcard",
+          text: "See what Tenzin makes of the postcard",
+          revealMessage:
+            "Tenzin takes the postcard between thumb and forefinger. His expression does not change.",
+        },
+      },
     ],
+  },
+  {
+    id: "temple-courtyard-postcard",
+    title: "The Gift Shop",
+    content: templeCourtyardPostcardContent,
+    links: [
+      { targetPageId: "temple-side-building", text: 'Visit the "gift shop"' },
+      { targetPageId: "temple-quarters", text: "Stay the night" },
+      { targetPageId: "temple-idol", text: "Explore the main building" },
+    ],
+    dropZones: [],
   },
   {
     id: "temple-side-building",
