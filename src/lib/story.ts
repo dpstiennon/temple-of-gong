@@ -464,10 +464,23 @@ export const storyPages: StoryPage[] = [
   },
   {
     id: "rescue-comic",
-    title: "The Distraction",
+    title: "The Rescue",
     content: rescueComicContent,
-    links: [{ targetPageId: "temple-escape", text: "Run!" }],
-    dropZones: [],
+    links: [],
+    dropZones: [
+      {
+        id: "use-jail-keys",
+        description: "The cell door is locked with a heavy iron bolt",
+        acceptsItemId: "jail-keys",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "temple-escape",
+          text: "Free Jonah and run",
+          revealMessage:
+            "The key turns. The bolt slides. Jonah is on his feet before the door is fully open.",
+        },
+      },
+    ],
   },
   {
     id: "rescue-fail",
