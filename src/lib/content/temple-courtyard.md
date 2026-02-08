@@ -1,6 +1,6 @@
 You step through the outer gates into a courtyard of worn stone. Monks in saffron robes move between buildings in silence—not the companionable silence of people who happen not to be talking, but a deeper quiet, as if sound itself has been subtracted from the air.
 
-Each monk wears a small brass gong around their neck. None of them look up as you enter.
+Each monk wears a brass gong around their neck. None of them look up as you enter.
 
 Except one.
 
@@ -24,7 +24,7 @@ The chalk hovers. He adds:
 
 OR YOU MAY WALK THE GROUNDS. THE MAIN TEMPLE IS WORTH SEEING.
 
-He gestures toward the central building—the tiered fortress that dominates the complex, its carved monkey faces staring down from every lintel. Then, almost as an afterthought, he waves vaguely toward a squat, windowless structure tucked against the far wall, half-swallowed by the shadow of the larger buildings. He does not write anything about that one.
+He gestures toward the central building—the tiered fortress that dominates the complex, its carved monkey faces staring down from every lintel. 
 
 YOUR TIME IS FORTUITOUS. YOU HAVE ARRIVED JUST IN TIME FOR TOMORROW'S FESTIVAL
 

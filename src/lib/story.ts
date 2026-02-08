@@ -15,6 +15,7 @@ import templeSideBuildingContent from "./content/temple-side-building.md?raw";
 import templeIdolContent from "./content/temple-idol.md?raw";
 import templeQuartersContent from "./content/temple-quarters.md?raw";
 import templeNightContent from "./content/temple-night.md?raw";
+import jonahCellContent from "./content/jonah-cell.md?raw";
 import templePrisonContent from "./content/temple-prison.md?raw";
 import prisonWaitContent from "./content/prison-wait.md?raw";
 import prisonEscapeContent from "./content/prison-escape.md?raw";
@@ -301,7 +302,23 @@ export const storyPages: StoryPage[] = [
     id: "temple-side-building",
     title: "The Side Buildings",
     content: templeSideBuildingContent,
-    links: [{ targetPageId: "temple-prison", text: "Talk to Jonah" }],
+    links: [{ targetPageId: "jonah-cell", text: "Talk to Jonah" }],
+    dropZones: [],
+  },
+  {
+    id: "jonah-cell",
+    title: "Jonah",
+    content: jonahCellContent,
+    links: [
+      {
+        targetPageId: "temple-quarters",
+        text: "Head back and wait for nightfall",
+      },
+      {
+        targetPageId: "temple-idol",
+        text: "Explore main temple",
+      },
+    ],
     dropZones: [],
   },
   {
