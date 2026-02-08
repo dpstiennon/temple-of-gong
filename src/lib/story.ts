@@ -493,11 +493,17 @@ export const storyPages: StoryPage[] = [
   },
   {
     id: "temple-escape",
-    title: "The Alarm",
+    title: "The Escape",
     content: templeEscapeContent,
     links: [
-      { targetPageId: "escape-path", text: "Run down the mountain path" },
-      { targetPageId: "escape-zeppelin", text: "Follow Jonah's plan" },
+      {
+        targetPageId: "escape-path",
+        text: "Come on! We'll be safe if we hurry",
+      },
+      {
+        targetPageId: "escape-zeppelin",
+        text: "Go with Jonah to find his pack",
+      },
     ],
     dropZones: [],
   },
