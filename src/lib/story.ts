@@ -11,11 +11,13 @@ import lostInMountainsContent from "./content/lost-in-mountains.md?raw";
 import templeOfGongContent from "./content/temple-of-gong.md?raw";
 import templeCourtyardContent from "./content/temple-courtyard.md?raw";
 import templeCourtyardPostcardContent from "./content/temple-courtyard-postcard.md?raw";
+import templeGiftShopContent from "./content/temple-gift-shop.md?raw";
 import templeSideBuildingContent from "./content/temple-side-building.md?raw";
 import templeIdolContent from "./content/temple-idol.md?raw";
 import templeQuartersContent from "./content/temple-quarters.md?raw";
 import templeNightContent from "./content/temple-night.md?raw";
 import jonahCellContent from "./content/jonah-cell.md?raw";
+import guardDistractedContent from "./content/guard-distracted.md?raw";
 import templePrisonContent from "./content/temple-prison.md?raw";
 import prisonWaitContent from "./content/prison-wait.md?raw";
 import prisonEscapeContent from "./content/prison-escape.md?raw";
@@ -256,7 +258,7 @@ export const storyPages: StoryPage[] = [
       { targetPageId: "temple-quarters", text: "Stay the night" },
       { targetPageId: "temple-idol", text: "Explore the main building" },
       {
-        targetPageId: "temple-side-building",
+        targetPageId: "temple-gift-shop",
         text: "Explore the unremarkable side building",
       },
     ],
@@ -292,9 +294,22 @@ export const storyPages: StoryPage[] = [
     title: "The Gift Shop",
     content: templeCourtyardPostcardContent,
     links: [
-      { targetPageId: "temple-side-building", text: 'Visit the "gift shop"' },
+      { targetPageId: "temple-gift-shop", text: 'Visit the "gift shop"' },
       { targetPageId: "temple-quarters", text: "Stay the night" },
       { targetPageId: "temple-idol", text: "Explore the main building" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-gift-shop",
+    title: "The Gift Shop",
+    content: templeGiftShopContent,
+    links: [
+      {
+        targetPageId: "temple-side-building",
+        text: "Continue exploring the side buildings",
+      },
+      { targetPageId: "temple-idol", text: "Visit the main temple" },
     ],
     dropZones: [],
   },
@@ -328,7 +343,7 @@ export const storyPages: StoryPage[] = [
     links: [
       { targetPageId: "temple-quarters", text: "Ask for a place to rest" },
       {
-        targetPageId: "temple-side-building",
+        targetPageId: "temple-gift-shop",
         text: "Explore the side buildings",
       },
     ],
@@ -365,26 +380,43 @@ export const storyPages: StoryPage[] = [
     title: "Night in the Temple",
     content: templeNightContent,
     links: [
-      {
-        targetPageId: "rescue-comic",
-        text: "Distract the guard with something",
-      },
       { targetPageId: "rescue-fail", text: "Try to sneak past the guard" },
+      {
+        targetPageId: "temple-festival",
+        text: "Head back to your quarters and wait for the festival tomorrow",
+      },
     ],
     dropZones: [
       {
         id: "use-comic-book",
-        description: "A guard sits by the prison stairs, half-asleep",
+        description: "The guard paces back and forth between the torches",
         acceptsItemId: "comic-book",
         consumeItem: true,
         hiddenLink: {
-          targetPageId: "rescue-comic",
+          targetPageId: "guard-distracted",
           text: "The guard is completely absorbed in the comic",
           revealMessage:
             "The guard's eyes go wide at the colorful pages. He's never seen anything like it.",
         },
       },
     ],
+  },
+  {
+    id: "guard-distracted",
+    title: "The Distraction",
+    content: guardDistractedContent,
+    links: [
+      { targetPageId: "rescue-comic", text: "Take the keys and rescue Jonah" },
+    ],
+    itemsToFind: [
+      {
+        id: "jail-keys",
+        name: "Jail keys",
+        description:
+          "A ring of heavy iron keys, still warm from the guard's belt.",
+      },
+    ],
+    dropZones: [],
   },
   {
     id: "bell-used",
