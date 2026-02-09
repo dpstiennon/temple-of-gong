@@ -19,6 +19,7 @@ if (typeof window !== 'undefined') {
     const hash = window.location.hash;
     if (hash && hash.startsWith('#/')) {
       currentPageId = hash.slice(2);
+      window.scrollTo(0, 0);
     }
   });
 }
@@ -26,6 +27,7 @@ if (typeof window !== 'undefined') {
 export function navigateTo(pageId: string) {
   window.location.hash = `#/${pageId}`;
   currentPageId = pageId;
+  window.scrollTo(0, 0);
 }
 
 export function getCurrentPageId(): string {
