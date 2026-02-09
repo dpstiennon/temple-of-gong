@@ -34,7 +34,9 @@
     // Automatically pick up items if present and not already in inventory
     $effect(() => {
         if (page.itemsToFind && pickedUpItems.length === 0) {
-            const newItems = page.itemsToFind.filter((item) => !hasItem(item.id));
+            const newItems = page.itemsToFind.filter(
+                (item) => !hasItem(item.id),
+            );
             if (newItems.length > 0) {
                 for (const item of newItems) {
                     addItem(item);
@@ -77,6 +79,10 @@
         {#if page.ending === "death"}
             <div class="death-screen">
                 <span class="death-text">YOU DIED</span>
+            </div>
+        {:else if page.ending === "complete"}
+            <div class="death-screen">
+                <span class="complete-text">THE END</span>
             </div>
         {/if}
         <nav class="choices">
@@ -258,5 +264,19 @@
             letter-spacing: 0.4em;
             filter: blur(0);
         }
+    }
+
+    .complete-text {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.4em;
+        color: #2e7d32;
+        text-shadow:
+            0 0 20px rgba(46, 125, 50, 0.5),
+            0 0 40px rgba(46, 125, 50, 0.3),
+            0 0 60px rgba(46, 125, 50, 0.2);
+        animation: death-fade-in 3s ease-out forwards;
+        opacity: 0;
+        font-family: "Times New Roman", Times, serif;
     }
 </style>

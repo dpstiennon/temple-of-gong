@@ -26,9 +26,12 @@ import rescueFailContent from "./content/rescue-fail.md?raw";
 import templeEscapeContent from "./content/temple-escape.md?raw";
 import escapePathContent from "./content/escape-path.md?raw";
 import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
+import escapeZeppelinEndingContent from "./content/escape-zeppelin-ending.md?raw";
 import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
 import shangriLaContent from "./content/shangri-la.md?raw";
 import bellUsedContent from "./content/bell-used.md?raw";
+import templePerimeterContent from "./content/temple-perimeter.md?raw";
+import templePerimeterDescentContent from "./content/temple-perimeter-descent.md?raw";
 // Shangri-La sequence
 import shangriDeclareContent from "./content/shangri-declare.md?raw";
 import shangriHideContent from "./content/shangri-hide.md?raw";
@@ -81,7 +84,7 @@ export const storyPages: StoryPage[] = [
         id: "comic-book",
         name: "A comic book",
         description:
-          "A well-worn comic book about a hero who talks to animals.",
+          "A well-worn comic book about a family of ducks going on wild adventures.",
       },
       {
         id: "matches",
@@ -261,6 +264,10 @@ export const storyPages: StoryPage[] = [
         targetPageId: "temple-gift-shop",
         text: "Explore the unremarkable side building",
       },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [
       {
@@ -297,6 +304,10 @@ export const storyPages: StoryPage[] = [
       { targetPageId: "temple-gift-shop", text: 'Visit the "gift shop"' },
       { targetPageId: "temple-quarters", text: "Stay the night" },
       { targetPageId: "temple-idol", text: "Explore the main building" },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -310,6 +321,10 @@ export const storyPages: StoryPage[] = [
         text: "Continue exploring the side buildings",
       },
       { targetPageId: "temple-idol", text: "Visit the main temple" },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -333,6 +348,10 @@ export const storyPages: StoryPage[] = [
         targetPageId: "temple-idol",
         text: "Explore main temple",
       },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -345,6 +364,10 @@ export const storyPages: StoryPage[] = [
       {
         targetPageId: "temple-gift-shop",
         text: "Explore the side buildings",
+      },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
       },
     ],
     dropZones: [
@@ -519,14 +542,52 @@ export const storyPages: StoryPage[] = [
     id: "escape-zeppelin",
     title: "The Pocket Zeppelin",
     content: escapeZeppelinContent,
-    links: [{ targetPageId: "zeppelin-fall", text: "Fly into the dawn" }],
+    links: [
+      { targetPageId: "escape-zeppelin-ending", text: "Fly into the dawn" },
+    ],
     dropZones: [],
+  },
+  {
+    id: "escape-zeppelin-ending",
+    title: "The Dawn",
+    content: escapeZeppelinEndingContent,
+    links: [],
+    dropZones: [],
+    ending: "complete",
   },
   {
     id: "zeppelin-fall",
     title: "The Fall",
     content: zeppelinFallContent,
     links: [{ targetPageId: "shangri-la", text: "Look around" }],
+    dropZones: [],
+  },
+
+  // === TEMPLE PERIMETER / ROPE LADDER ===
+
+  {
+    id: "temple-perimeter",
+    title: "The Ledge",
+    content: templePerimeterContent,
+    links: [
+      {
+        targetPageId: "temple-perimeter-descent",
+        text: "Climb down the rope ladder",
+      },
+      { targetPageId: "temple-idol", text: "Visit the main temple" },
+      { targetPageId: "temple-gift-shop", text: "Explore the side buildings" },
+      { targetPageId: "temple-quarters", text: "Stay the night" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-perimeter-descent",
+    title: "The Descent",
+    content: templePerimeterDescentContent,
+    links: [
+      { targetPageId: "shangri-declare", text: "Approach the city openly" },
+      { targetPageId: "shangri-hide", text: "Hide and observe" },
+    ],
     dropZones: [],
   },
 

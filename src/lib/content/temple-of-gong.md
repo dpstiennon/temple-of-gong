@@ -6,6 +6,8 @@ The air thins. Your lungs burn. You sleep in shallow caves and wake shivering, f
 
 On the third afternoon, the path crests a final ridge and you see it.
 
+![The Temple of Gong](/Temple.png)
+
 The Temple of the Monkey God sprawls across an entire mountain peak, a complex of courtyards and shrines and lesser buildings arranged around a central structure that defies the word "temple." It is a fortress. A palace. A stone fist raised against the sky. The main building rises in tiers, each level smaller than the last, black rock fitted together without mortar and carved with thousands of figures—monkeys, demons, gods, all frozen mid-motion in the ancient stone.
 
 The surrounding peaks pierce the clouds like teeth. Below, where valleys should be, there is only mist—white and absolute, as if the rest of the world has simply ceased to exist. You stand at the roof of everything.
