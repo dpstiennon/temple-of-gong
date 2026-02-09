@@ -10,5 +10,4 @@ For a moment, nothing.
 
 Then the rumbling starts.
 
-You look up. The entire mountainside above the path is moving—slowly at first, almost gracefully, a white curtain sliding free. Then not slowly at all. Jonah grabs your arm.  He doesn't actually say it out loud, but his arched eyebrow says "Told you so."
-
+You look up. The entire mountainside above the path is moving—slowly at first, almost gracefully, a white curtain sliding free. Then not slowly at all. Jonah grabs your arm.  He doesn't actually say it out loud, but his arched eyebrow speaks louder than words: "Told you so."

@@ -519,7 +519,7 @@ export const storyPages: StoryPage[] = [
     id: "escape-zeppelin",
     title: "The Pocket Zeppelin",
     content: escapeZeppelinContent,
-    links: [{ targetPageId: "zeppelin-fall", text: "Climb aboard" }],
+    links: [{ targetPageId: "zeppelin-fall", text: "Fly into the dawn" }],
     dropZones: [],
   },
   {
