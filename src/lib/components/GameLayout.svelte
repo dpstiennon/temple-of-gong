@@ -109,6 +109,24 @@
             storyAreaEl.removeEventListener("touchdrop", handleTouchDrop);
         };
     });
+
+    // Listen for swipe-to-use events (bubbles from inventory area)
+    $effect(() => {
+        function handleSwipeUse(e: Event) {
+            const detail = (e as CustomEvent).detail;
+            if (!detail?.item) return;
+
+            const zone = findZoneForItem(detail.item);
+            if (zone) {
+                applyDrop(detail.item, zone);
+            }
+        }
+
+        document.addEventListener("swipeuse", handleSwipeUse);
+        return () => {
+            document.removeEventListener("swipeuse", handleSwipeUse);
+        };
+    });
 </script>
 
 <div class="game-layout">

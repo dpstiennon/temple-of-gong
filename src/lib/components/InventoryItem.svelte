@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { InventoryItem } from "../types";
-    import { startDrag, endDrag, updateTouchPos } from "../dragState.svelte";
+    import { startDrag, endDrag } from "../dragState.svelte";
 
     interface Props {
         item: InventoryItem;
@@ -24,68 +24,31 @@
         endDrag();
     }
 
-    // --- Touch drag ---
+    // --- Swipe-to-use (touch) ---
     let itemEl: HTMLElement;
-    let touchProxy: HTMLElement | null = null;
-    let touchStartTimer: ReturnType<typeof setTimeout> | null = null;
-    let touchStarted = false;
-
-    function createProxy(x: number, y: number) {
-        const el = document.createElement("div");
-        el.textContent = item.name;
-        el.setAttribute("aria-hidden", "true");
-        Object.assign(el.style, {
-            position: "fixed",
-            left: `${x - 40}px`,
-            top: `${y - 20}px`,
-            padding: "0.5rem 0.75rem",
-            background: "linear-gradient(135deg, #3a3a5e 0%, #2a2a4e 100%)",
-            border: "1px solid #c4a35a",
-            borderRadius: "8px",
-            color: "#e0e0e0",
-            fontSize: "0.9rem",
-            pointerEvents: "none",
-            zIndex: "9999",
-            boxShadow: "0 6px 20px rgba(0,0,0,0.5)",
-            opacity: "0.95",
-            whiteSpace: "nowrap",
-        });
-        document.body.appendChild(el);
-        return el;
-    }
+    let swipeStartX = 0;
+    let swipeOffset = $state(0);
+    let isSwiping = $state(false);
+    const SWIPE_THRESHOLD = 80;
+    const SWIPE_MAX = 120;
 
     function handleTouchStart(e: TouchEvent) {
         const touch = e.touches[0];
-        const startX = touch.clientX;
-        const startY = touch.clientY;
-
-        // Use a short delay to distinguish scrolling from dragging
-        touchStartTimer = setTimeout(() => {
-            touchStarted = true;
-            isDragging = true;
-            startDrag(item);
-            updateTouchPos(startX, startY);
-            touchProxy = createProxy(startX, startY);
-        }, 150);
+        swipeStartX = touch.clientX;
+        swipeOffset = 0;
+        isSwiping = false;
     }
 
     function handleTouchMove(e: TouchEvent) {
-        if (!touchStarted) {
-            // If the finger moves before the hold timer fires, cancel the drag
-            if (touchStartTimer) {
-                clearTimeout(touchStartTimer);
-                touchStartTimer = null;
-            }
-            return;
-        }
-
-        e.preventDefault();
         const touch = e.touches[0];
-        updateTouchPos(touch.clientX, touch.clientY);
+        const deltaX = touch.clientX - swipeStartX;
 
-        if (touchProxy) {
-            touchProxy.style.left = `${touch.clientX - 40}px`;
-            touchProxy.style.top = `${touch.clientY - 20}px`;
+        if (deltaX > 0) {
+            e.preventDefault();
+            isSwiping = true;
+            swipeOffset = Math.min(deltaX, SWIPE_MAX);
+        } else {
+            swipeOffset = 0;
         }
     }
 
@@ -100,65 +63,80 @@
         };
     });
 
-    function handleTouchEnd(e: TouchEvent) {
-        if (touchStartTimer) {
-            clearTimeout(touchStartTimer);
-            touchStartTimer = null;
-        }
-
-        if (!touchStarted) return;
-        touchStarted = false;
-
-        // Dispatch a custom event at the touch release point so GameLayout can detect the drop
-        const touch = e.changedTouches[0];
-        const dropTarget = document.elementFromPoint(
-            touch.clientX,
-            touch.clientY,
-        );
-        if (dropTarget) {
-            dropTarget.dispatchEvent(
-                new CustomEvent("touchdrop", {
+    function handleTouchEnd() {
+        if (swipeOffset >= SWIPE_THRESHOLD) {
+            itemEl.dispatchEvent(
+                new CustomEvent("swipeuse", {
                     bubbles: true,
                     detail: { item },
                 }),
             );
         }
 
-        // Clean up
-        if (touchProxy) {
-            touchProxy.remove();
-            touchProxy = null;
-        }
-        isDragging = false;
-        endDrag();
+        isSwiping = false;
+        swipeOffset = 0;
     }
 </script>
 
-<div
-    bind:this={itemEl}
-    class="inventory-item"
-    class:dragging={isDragging}
-    draggable="true"
-    ondragstart={handleDragStart}
-    ondragend={handleDragEnd}
-    ontouchstart={handleTouchStart}
-    ontouchend={handleTouchEnd}
-    role="listitem"
-    title={item.description}
->
-    <span class="item-name">{item.name}</span>
+<div class="item-swipe-container" bind:this={itemEl}>
+    <div class="swipe-track" class:ready={swipeOffset >= SWIPE_THRESHOLD}>
+        <span>Use &#9658;</span>
+    </div>
+    <div
+        class="inventory-item"
+        class:dragging={isDragging}
+        class:swiping={isSwiping}
+        draggable="true"
+        style:transform="translateX({swipeOffset}px)"
+        ondragstart={handleDragStart}
+        ondragend={handleDragEnd}
+        ontouchstart={handleTouchStart}
+        ontouchend={handleTouchEnd}
+        role="listitem"
+        title={item.description}
+    >
+        <span class="item-name">{item.name}</span>
+    </div>
 </div>
 
 <style>
+    .item-swipe-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .swipe-track {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        background: linear-gradient(135deg, #3a2a10 0%, #2a1a08 100%);
+        color: #8a7a3a;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        transition: color 0.15s ease;
+    }
+
+    .swipe-track.ready {
+        color: #c4a35a;
+    }
+
     .inventory-item {
+        position: relative;
         padding: 0.75rem 1rem;
         background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
         border: 1px solid #3a3a5e;
         border-radius: 8px;
         cursor: grab;
-        transition: all 0.2s ease;
         user-select: none;
-        touch-action: none;
+        touch-action: pan-y;
+    }
+
+    .inventory-item:not(.swiping) {
+        transition: all 0.2s ease;
     }
 
     .inventory-item:hover {
