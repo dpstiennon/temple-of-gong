@@ -42,7 +42,16 @@ import shangriNoMaskContent from "./content/shangri-no-mask.md?raw";
 import shangriMaskedContent from "./content/shangri-masked.md?raw";
 import shangriCloseCallContent from "./content/shangri-close-call.md?raw";
 import shangriDorjeContent from "./content/shangri-dorje.md?raw";
-import shangriMeiContent from "./content/shangri-mei.md?raw";
+import shangriCisternContent from "./content/shangri-cistern.md?raw";
+// Cistern sequence
+import cisternBobContent from "./content/cistern-bob.md?raw";
+import cisternNightContent from "./content/cistern-night.md?raw";
+import cisternDeathContent from "./content/cistern-death.md?raw";
+import cisternCaughtContent from "./content/cistern-caught.md?raw";
+import cisternVentsContent from "./content/cistern-vents.md?raw";
+import cisternStayContent from "./content/cistern-stay.md?raw";
+import cisternEruptionContent from "./content/cistern-eruption.md?raw";
+import cisternLandingContent from "./content/cistern-landing.md?raw";
 
 export const storyPages: StoryPage[] = [
   {
@@ -706,7 +715,7 @@ export const storyPages: StoryPage[] = [
         targetPageId: "shangri-dorje",
         text: "Duck into the gong-maker's shop",
       },
-      { targetPageId: "shangri-mei", text: "Dive into the cistern" },
+      { targetPageId: "shangri-cistern", text: "Dive into the cistern" },
     ],
     dropZones: [],
   },
@@ -718,10 +727,98 @@ export const storyPages: StoryPage[] = [
     dropZones: [],
   },
   {
-    id: "shangri-mei",
+    id: "shangri-cistern",
     title: "The Cistern",
-    content: shangriMeiContent,
+    content: shangriCisternContent,
+    links: [
+      { targetPageId: "cistern-bob", text: "Follow the voice into the dark" },
+    ],
+    dropZones: [],
+  },
+
+  // === CISTERN SEQUENCE ===
+
+  {
+    id: "cistern-bob",
+    title: "Bob",
+    content: cisternBobContent,
+    links: [{ targetPageId: "cistern-night", text: "Fall asleep" }],
+    dropZones: [],
+  },
+  {
+    id: "cistern-night",
+    title: "The Dark",
+    content: cisternNightContent,
+    links: [
+      {
+        targetPageId: "cistern-death",
+        text: "Hold still and hope for the best",
+      },
+    ],
+    dropZones: [
+      {
+        id: "use-matches-cistern",
+        description: "The darkness is total. The breathing is getting closer.",
+        acceptsItemId: "matches",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "cistern-caught",
+          text: "Strike a match",
+          revealMessage:
+            "Your fingers close around the matchbox in your pocket. One chance.",
+        },
+      },
+    ],
+  },
+  {
+    id: "cistern-death",
+    title: "The End",
+    content: cisternDeathContent,
     links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "cistern-caught",
+    title: "Caught",
+    content: cisternCaughtContent,
+    links: [
+      { targetPageId: "cistern-vents", text: "Head for the volcanic vents" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "cistern-vents",
+    title: "The Volcanic Vents",
+    content: cisternVentsContent,
+    links: [
+      { targetPageId: "cistern-stay", text: "Nah, that's crazy" },
+      { targetPageId: "cistern-eruption", text: "Plug the vent" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "cistern-stay",
+    title: "The End",
+    content: cisternStayContent,
+    links: [],
+    dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "cistern-eruption",
+    title: "The Eruption",
+    content: cisternEruptionContent,
+    links: [{ targetPageId: "cistern-landing", text: "Brace for impact" }],
+    dropZones: [],
+  },
+  {
+    id: "cistern-landing",
+    title: "The Courtyard",
+    content: cisternLandingContent,
+    links: [
+      { targetPageId: "escape-zeppelin", text: "Find somewhere to hide" },
+    ],
     dropZones: [],
   },
 ];
