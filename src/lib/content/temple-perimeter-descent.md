@@ -6,6 +6,8 @@ At rung one hundred and twelve, the air changes. Warmer. Thicker. It smells gree
 
 At one-fifty, you break through.
 
+![The Descent](/Temple.png)
+
 A hidden valley stretches below, impossibly green, impossibly warm. Terraced gardens climb the hillsides in neat rows. Golden spires gleam where they catch the last of the sun. The clouds sit above you now—a solid white roof sealing the valley off from the rest of the world.
 
 You climb the rest of the way down and step onto soft grass. The rope ladder sways behind you, vanishing back up into the white.

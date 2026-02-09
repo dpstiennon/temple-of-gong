@@ -26,6 +26,7 @@ import rescueFailContent from "./content/rescue-fail.md?raw";
 import templeEscapeContent from "./content/temple-escape.md?raw";
 import escapePathContent from "./content/escape-path.md?raw";
 import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
+import escapeZeppelinEndingContent from "./content/escape-zeppelin-ending.md?raw";
 import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
 import shangriLaContent from "./content/shangri-la.md?raw";
 import bellUsedContent from "./content/bell-used.md?raw";
@@ -541,8 +542,18 @@ export const storyPages: StoryPage[] = [
     id: "escape-zeppelin",
     title: "The Pocket Zeppelin",
     content: escapeZeppelinContent,
-    links: [{ targetPageId: "zeppelin-fall", text: "Fly into the dawn" }],
+    links: [
+      { targetPageId: "escape-zeppelin-ending", text: "Fly into the dawn" },
+    ],
     dropZones: [],
+  },
+  {
+    id: "escape-zeppelin-ending",
+    title: "The Dawn",
+    content: escapeZeppelinEndingContent,
+    links: [],
+    dropZones: [],
+    ending: "complete",
   },
   {
     id: "zeppelin-fall",
