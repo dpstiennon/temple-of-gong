@@ -29,6 +29,8 @@ import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
 import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
 import shangriLaContent from "./content/shangri-la.md?raw";
 import bellUsedContent from "./content/bell-used.md?raw";
+import templePerimeterContent from "./content/temple-perimeter.md?raw";
+import templePerimeterDescentContent from "./content/temple-perimeter-descent.md?raw";
 // Shangri-La sequence
 import shangriDeclareContent from "./content/shangri-declare.md?raw";
 import shangriHideContent from "./content/shangri-hide.md?raw";
@@ -81,7 +83,7 @@ export const storyPages: StoryPage[] = [
         id: "comic-book",
         name: "A comic book",
         description:
-          "A well-worn comic book about a hero who talks to animals.",
+          "A well-worn comic book about a family of ducks going on wild adventures.",
       },
       {
         id: "matches",
@@ -244,6 +246,10 @@ export const storyPages: StoryPage[] = [
     content: templeOfGongContent,
     links: [
       { targetPageId: "temple-courtyard", text: "Enter the temple courtyard" },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore around the perimeter of the temple",
+      },
     ],
     dropZones: [],
   },
@@ -527,6 +533,32 @@ export const storyPages: StoryPage[] = [
     title: "The Fall",
     content: zeppelinFallContent,
     links: [{ targetPageId: "shangri-la", text: "Look around" }],
+    dropZones: [],
+  },
+
+  // === TEMPLE PERIMETER / ROPE LADDER ===
+
+  {
+    id: "temple-perimeter",
+    title: "The Ledge",
+    content: templePerimeterContent,
+    links: [
+      {
+        targetPageId: "temple-perimeter-descent",
+        text: "Climb down the rope ladder",
+      },
+      { targetPageId: "temple-courtyard", text: "Turn back to the temple" },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "temple-perimeter-descent",
+    title: "The Descent",
+    content: templePerimeterDescentContent,
+    links: [
+      { targetPageId: "shangri-declare", text: "Approach the city openly" },
+      { targetPageId: "shangri-hide", text: "Hide and observe" },
+    ],
     dropZones: [],
   },
 
