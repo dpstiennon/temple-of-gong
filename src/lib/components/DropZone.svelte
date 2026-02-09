@@ -20,6 +20,7 @@
 {#if activated}
     <div
         class="drop-zone activated"
+        data-zone-id={zone.id}
         role="region"
         aria-label={zone.description}
     >

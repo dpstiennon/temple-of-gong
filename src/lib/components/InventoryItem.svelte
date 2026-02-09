@@ -109,7 +109,7 @@
     .swipe-track {
         position: absolute;
         inset: 0;
-        display: flex;
+        display: none;
         align-items: center;
         padding-left: 1rem;
         background: linear-gradient(135deg, #3a2a10 0%, #2a1a08 100%);
@@ -118,6 +118,12 @@
         font-weight: 600;
         letter-spacing: 0.05em;
         transition: color 0.15s ease;
+    }
+
+    @media (max-width: 768px) {
+        .swipe-track {
+            display: flex;
+        }
     }
 
     .swipe-track.ready {

@@ -3,3 +3,4 @@ On an otherwise ordinary day, you find yourself thinking about your dear friend 
 You fumble in your pocket for your mailbox key.
 
 *Drag items from your inventory onto the story to use them.*
+*On mobile, swipe right to use an item.*

@@ -3,6 +3,7 @@
     import { getPage } from "../story";
     import StoryPage from "./StoryPage.svelte";
     import Inventory from "./Inventory.svelte";
+    import { tick } from "svelte";
     import {
         dragState,
         getDraggedItem,
@@ -51,7 +52,7 @@
         }
     }
 
-    function applyDrop(droppedItem: InventoryItem, zone: DropZone) {
+    async function applyDrop(droppedItem: InventoryItem, zone: DropZone) {
         // Remove the item from inventory unless consumeItem is false
         if (zone.consumeItem !== false) {
             removeItem(droppedItem.id);
@@ -63,6 +64,15 @@
         // Add reward item if any
         if (zone.rewardItem) {
             addItem(zone.rewardItem);
+        }
+
+        // Scroll to the newly revealed link if it's not visible
+        await tick();
+        const revealed = document.querySelector(
+            `[data-zone-id="${zone.id}"] .hidden-link`,
+        );
+        if (revealed) {
+            revealed.scrollIntoView({ behavior: "smooth", block: "center" });
         }
     }
 
