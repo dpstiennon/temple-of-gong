@@ -246,10 +246,6 @@ export const storyPages: StoryPage[] = [
     content: templeOfGongContent,
     links: [
       { targetPageId: "temple-courtyard", text: "Enter the temple courtyard" },
-      {
-        targetPageId: "temple-perimeter",
-        text: "Explore around the perimeter of the temple",
-      },
     ],
     dropZones: [],
   },
@@ -266,6 +262,10 @@ export const storyPages: StoryPage[] = [
       {
         targetPageId: "temple-gift-shop",
         text: "Explore the unremarkable side building",
+      },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
       },
     ],
     dropZones: [
@@ -303,6 +303,10 @@ export const storyPages: StoryPage[] = [
       { targetPageId: "temple-gift-shop", text: 'Visit the "gift shop"' },
       { targetPageId: "temple-quarters", text: "Stay the night" },
       { targetPageId: "temple-idol", text: "Explore the main building" },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -316,6 +320,10 @@ export const storyPages: StoryPage[] = [
         text: "Continue exploring the side buildings",
       },
       { targetPageId: "temple-idol", text: "Visit the main temple" },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -339,6 +347,10 @@ export const storyPages: StoryPage[] = [
         targetPageId: "temple-idol",
         text: "Explore main temple",
       },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
+      },
     ],
     dropZones: [],
   },
@@ -351,6 +363,10 @@ export const storyPages: StoryPage[] = [
       {
         targetPageId: "temple-gift-shop",
         text: "Explore the side buildings",
+      },
+      {
+        targetPageId: "temple-perimeter",
+        text: "Explore the temple perimeter",
       },
     ],
     dropZones: [
@@ -547,7 +563,9 @@ export const storyPages: StoryPage[] = [
         targetPageId: "temple-perimeter-descent",
         text: "Climb down the rope ladder",
       },
-      { targetPageId: "temple-courtyard", text: "Turn back to the temple" },
+      { targetPageId: "temple-idol", text: "Visit the main temple" },
+      { targetPageId: "temple-gift-shop", text: "Explore the side buildings" },
+      { targetPageId: "temple-quarters", text: "Stay the night" },
     ],
     dropZones: [],
   },
