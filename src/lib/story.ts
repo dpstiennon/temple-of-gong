@@ -42,6 +42,12 @@ import shangriNoMaskContent from "./content/shangri-no-mask.md?raw";
 import shangriMaskedContent from "./content/shangri-masked.md?raw";
 import shangriCloseCallContent from "./content/shangri-close-call.md?raw";
 import shangriDorjeContent from "./content/shangri-dorje.md?raw";
+import shangriNightfallContent from "./content/shangri-nightfall.md?raw";
+import shangriDistractFireContent from "./content/shangri-distract-fire.md?raw";
+import shangriDistractComicContent from "./content/shangri-distract-comic.md?raw";
+import shangriBalloonApproachContent from "./content/shangri-balloon-approach.md?raw";
+import shangriSeizedContent from "./content/shangri-seized.md?raw";
+import shangriBalloonRideContent from "./content/shangri-balloon-ride.md?raw";
 import shangriCisternContent from "./content/shangri-cistern.md?raw";
 // Cistern sequence
 import cisternBobContent from "./content/cistern-bob.md?raw";
@@ -723,8 +729,113 @@ export const storyPages: StoryPage[] = [
     id: "shangri-dorje",
     title: "The Gong-Maker",
     content: shangriDorjeContent,
+    links: [{ targetPageId: "shangri-nightfall", text: "Wait for nightfall" }],
+    dropZones: [],
+  },
+  {
+    id: "shangri-nightfall",
+    title: "The Great Balloon",
+    content: shangriNightfallContent,
+    links: [
+      {
+        targetPageId: "shangri-seized",
+        text: "Nah, I'll just be extra careful",
+      },
+    ],
+    dropZones: [
+      {
+        id: "use-matches-distraction",
+        description:
+          "Dorje watches you expectantly. Do you have anything from the outside?",
+        acceptsItemId: "matches",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "shangri-distract-fire",
+          text: "Hand Dorje the matches",
+          revealMessage:
+            "Dorje turns the matchbox over in his hands. His eyes widen. He nods once.",
+        },
+      },
+      {
+        id: "use-comic-distraction",
+        description:
+          "Dorje watches you expectantly. Do you have anything from the outside?",
+        acceptsItemId: "comic-book",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "shangri-distract-comic",
+          text: "Hand Dorje the comic book",
+          revealMessage:
+            "Dorje opens the comic book. His mouth twitches. His shoulders shake.",
+        },
+      },
+    ],
+  },
+  {
+    id: "shangri-distract-fire",
+    title: "The Fire",
+    content: shangriDistractFireContent,
+    links: [
+      {
+        targetPageId: "shangri-balloon-approach",
+        text: "Head for the balloon",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-distract-comic",
+    title: "The Comic Book",
+    content: shangriDistractComicContent,
+    links: [
+      {
+        targetPageId: "shangri-balloon-approach",
+        text: "Head for the balloon",
+      },
+    ],
+    dropZones: [],
+  },
+  {
+    id: "shangri-balloon-approach",
+    title: "The Balloon",
+    content: shangriBalloonApproachContent,
+    links: [
+      {
+        targetPageId: "shangri-seized",
+        text: "Try to untie the ropes by hand",
+      },
+    ],
+    dropZones: [
+      {
+        id: "use-spork-tethers",
+        description:
+          "Four hemp tethers, thick as your wrist, anchor the balloon to iron stakes",
+        acceptsItemId: "spork",
+        consumeItem: true,
+        hiddenLink: {
+          targetPageId: "shangri-balloon-ride",
+          text: "Cut the tethers with the spork",
+          revealMessage:
+            "The titanium edge bites into the hemp. One tether parts. Then another. Then a third. The fourth screams under the strain and snaps on its own.",
+        },
+      },
+    ],
+  },
+  {
+    id: "shangri-seized",
+    title: "The End",
+    content: shangriSeizedContent,
     links: [],
     dropZones: [],
+    ending: "death",
+  },
+  {
+    id: "shangri-balloon-ride",
+    title: "The Dawn",
+    content: shangriBalloonRideContent,
+    links: [],
+    dropZones: [],
+    ending: "complete",
   },
   {
     id: "shangri-cistern",
