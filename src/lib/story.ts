@@ -23,6 +23,7 @@ import prisonWaitContent from "./content/prison-wait.md?raw";
 import prisonEscapeContent from "./content/prison-escape.md?raw";
 import rescueComicContent from "./content/rescue-comic.md?raw";
 import rescueFailContent from "./content/rescue-fail.md?raw";
+import rescueSporkContent from "./content/rescue-spork.md?raw";
 import templeEscapeContent from "./content/temple-escape.md?raw";
 import escapePathContent from "./content/escape-path.md?raw";
 import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
@@ -518,9 +519,28 @@ export const storyPages: StoryPage[] = [
     id: "rescue-fail",
     title: "Caught!",
     content: rescueFailContent,
-    links: [
-      { targetPageId: "temple-prison", text: "You are thrown into the cells" },
+    links: [{ targetPageId: "prison-wait", text: "Wait and see what happens" }],
+    dropZones: [
+      {
+        id: "use-spork-rescue",
+        description:
+          "The cell door latch and Jonah's chain pins look like they'd yield to something sturdy and metal",
+        acceptsItemId: "spork",
+        consumeItem: false,
+        hiddenLink: {
+          targetPageId: "rescue-spork",
+          text: "Use the spork on the locks",
+          revealMessage:
+            "The titanium catches the torchlight. Thin enough, strong enough, metal enough.",
+        },
+      },
     ],
+  },
+  {
+    id: "rescue-spork",
+    title: "The Spork",
+    content: rescueSporkContent,
+    links: [{ targetPageId: "temple-escape", text: "Run!" }],
     dropZones: [],
   },
   {

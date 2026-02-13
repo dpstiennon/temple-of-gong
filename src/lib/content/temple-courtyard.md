@@ -1,10 +1,10 @@
-You step through the outer gates into a courtyard of worn stone. Monks in saffron robes move between buildings in silence—not the companionable silence of people who happen not to be talking, but a deeper quiet, as if sound itself has been subtracted from the air.
+You step through the outer gates into a courtyard of worn stone. Monks in saffron robes move between buildings in silence—not the companionable silence of people who happen not to be talking, but a deeper quiet.
 
 Each monk wears a brass gong around their neck. None of them look up as you enter.
 
 Except one.
 
-He crosses the courtyard toward you with an unhurried stride, producing from the folds of his robe a blackboard no larger than a dinner plate and a stub of white chalk. He writes in quick, precise letters—English, which strikes you as odd for a monastery perched at the ceiling of the world:
+He crosses the courtyard toward you with an unhurried stride, producing from the folds of his robe a blackboard no larger than a dinner plate and a stub of white chalk. He writes in English, in quick, precise letters:
 
 WELCOME TRAVELER. YOU HAVE COME FAR.
 
@@ -16,7 +16,7 @@ I AM BROTHER TENZIN. WE DO NOT HEAR. NONE OF US.
 
 You glance across the courtyard. The other monks drift past like figures in a painting. No murmured prayers. No shuffled sandals. The only sound is the wind threading between the buildings and the faint, intermittent pulse of a gong somewhere deep inside the complex.
 
-Tenzin watches you take this in. His eyes are warm, but they stay on you a beat longer than feels natural—studying you, perhaps, the way you might study a map. He erases the board and writes:
+Tenzin watches you take this in. His eyes are warm, but they stay on you a beat longer than feels natural. He erases the board and writes:
 
 YOU MUST BE TIRED. WE HAVE A ROOM FOR YOU.
 
