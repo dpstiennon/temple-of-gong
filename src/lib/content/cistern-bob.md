@@ -4,9 +4,9 @@ Then a match flares—not yours—and you see him. A wiry man in his fifties, ma
 
 "Bob," he says, extending a hand. "Bob Kettleman. Topeka, Kansas. Well—formerly Topeka. Currently—" he gestures around at the cave. "This."
 
-He leads you deeper. The passages open up, and you begin to understand what you're standing in. It's not just a cistern. It's infrastructure. Channels carved into the rock direct snowmelt from the peaks above into holding basins. The water flows through stone pipes that pass over volcanic vents—you can feel the heat rising through the soles of your shoes—and emerges warm on the other side. Heated running water, engineered centuries ago, feeding every bath and kitchen in the city above.
+He leads you deeper. The passages open up, and you begin to understand what you're standing in. It's not just a cistern. It's infrastructure. Beams of light peep through grates high aboe, providing a dim illumination.  Channels carved into the rock direct snowmelt from the peaks above into holding basins. The water flows through stone basins that pass over volcanic vents—you can feel the heat rising through the soles of your shoes—and emerges warm on the other side. Heated running water, engineered centuries ago, feeding every bath and kitchen in the city above.
 
-"Beautiful, isn't it?" Bob says, with the pride of a man who had nothing to do with building it but has had decades to appreciate the craftsmanship. "The Shangri-La-ans are smart people. Talented engineers. Lovely culture." He pauses. "Murderous, though."
+"Beautiful, isn't it?" Bob says. "The Shangri-La-ans are smart people. Talented engineers. Lovely culture." He pauses. "Murderous, though."
 
 He explains. Any outsider found in the valley is taken to the Temple of Gong and sacrificed—hurled off the cliff as an offering. It's been this way for centuries. The Shangri-La-ans are not cruel about it. They consider it a great honor. They throw a little ceremony. There are gongs.
 

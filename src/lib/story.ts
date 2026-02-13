@@ -229,7 +229,7 @@ export const storyPages: StoryPage[] = [
     links: [
       {
         targetPageId: "lost-in-mountains",
-        text: "Wander deeper into the mountains",
+        text: "The power of friendship will guide you!  Press on!",
       },
       { targetPageId: "kathmandu-temple", text: "Return to Kathmandu" },
     ],
@@ -876,7 +876,7 @@ export const storyPages: StoryPage[] = [
           targetPageId: "cistern-caught",
           text: "Strike a match",
           revealMessage:
-            "Your fingers close around the matchbox in your pocket. One chance.",
+            "Your fingers close around the matchbox in your pocket.",
         },
       },
     ],

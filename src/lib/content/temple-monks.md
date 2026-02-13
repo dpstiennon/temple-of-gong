@@ -1,6 +1,6 @@
 You show the monk the postcard. His smile doesn't waver, but something shifts behind his eyes.
 
-"Ah," he says softly. He takes the postcard with both hands, studying the image of the mountain temple with its great golden gong. "The Temple of Gong."
+"Ah," he says softly. He takes the postcard with both hands, studying the image. "The Temple of Gong."
 
 Other monks have noticed. Two more drift over, their bare feet silent on the stone floor. They peer at the postcard, exchanging glances and murmured words in a language you don't recognize.
 
@@ -16,4 +16,4 @@ He studies your face for a moment.
 
 "You seek someone there, yes? A friend?" He doesn't wait for an answer. "The path begins at the north edge of the city. If you have come this far, I think you will not turn back now."
 
-He presses his palms together in farewell.
+He disappears into a back room and returns with a folded piece of yellowed paper—a hand-drawn map, the ink faded but legible. He presses it into your hands.

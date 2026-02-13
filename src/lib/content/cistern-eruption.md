@@ -20,7 +20,7 @@ You reach the main cistern chamber just as the carved stone buttresses begin to 
 
 The plug blows.
 
-The sound is beyond sound—a crack that hits your whole body at once. A column of superheated steam erupts from below, catches the slab, catches you, and hurls everything upward through the cistern shaft like a cork from a champagne bottle. Stone walls blur past. The iron grate that you crawled through hours ago disintegrates. Daylight hits you like a flashbang. You're still accelerating.
+The sound is beyond sound. A column of superheated steam erupts from below, catches the slab, catches you, and hurls everything upward through the cistern shaft like a cork from a champagne bottle. Stone walls blur past. The iron grate that you crawled through hours ago disintegrates. Daylight hits you like a flashbang. You're still accelerating.
 
 You clear the valley. You clear the cliffs. You are riding a slab of ancient masonry on a pillar of volcanic steam hundreds of feet above the Himalayas, and the only thought your brain can assemble is: *Bob was right. This was insane.*
 
