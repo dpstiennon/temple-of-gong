@@ -2,6 +2,8 @@ Of course, you are not the type to abandon a friend in need. You've canceled you
 
 Your only clue is the postcard itself. The image on the front shows a stone temple perched impossibly high in the Himalayas, its tiered roofs dusted with snow. But what catches your eye is what stands in the foreground: an immense golden gong, at least the height of a man. Embossed in its gleaming center is the face of a monkey—ancient, knowing, its expression caught between mischief and menace.
 
+![The Postcard](/Postcard.png)
+
 You tuck the postcard into your jacket pocket and set off into the city.
 
 Years ago, over drinks that neither of you could quite afford, Jonah taught you the three items one must always pack for any adventure:
