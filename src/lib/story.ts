@@ -232,7 +232,7 @@ export const storyPages: StoryPage[] = [
         id: "consult-map",
         description: "The path branches ahead, unmarked and uncertain",
         acceptsItemId: "temple-map",
-        consumeItem: false,
+        consumeItem: true,
         hiddenLink: {
           targetPageId: "temple-of-gong",
           text: "Follow the map to the Temple of Gong",
@@ -470,7 +470,7 @@ export const storyPages: StoryPage[] = [
         description:
           "The cell door latch and Jonah's chain pins look like they'd yield to something sturdy and metal",
         acceptsItemId: "spork",
-        consumeItem: false,
+        consumeItem: true,
         hiddenLink: {
           targetPageId: "rescue-spork",
           text: "Use the spork on the locks",
@@ -520,7 +520,7 @@ export const storyPages: StoryPage[] = [
         description:
           "The cell door latch and Jonah's chain pins look like they'd yield to something sturdy and metal",
         acceptsItemId: "spork",
-        consumeItem: false,
+        consumeItem: true,
         hiddenLink: {
           targetPageId: "rescue-spork",
           text: "Use the spork on the locks",
