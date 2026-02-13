@@ -1,1 +1,0 @@
-You try to move through the crowd with your head down, hoping no one will notice your bare face. It works for perhaps thirty seconds. Then a child points, and whispers spread like fire. Masks turn toward you—monkey faces, demon faces, all staring. The crowd parts, and soldiers step through. You run, but there is nowhere to go.

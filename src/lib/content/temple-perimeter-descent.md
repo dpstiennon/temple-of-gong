@@ -13,3 +13,7 @@ A hidden valley stretches below, impossibly green, impossibly warm. Terraced gar
 You climb the rest of the way down and step onto soft grass. The rope ladder sways behind you, vanishing back up into the white.
 
 Whatever this place is, the monks know about it. That well-maintained ladder is not an accident.
+
+There's no big sign. No welcome committee. But you know the name of this place—everyone does, the way everyone knows the name of Atlantis or El Dorado. A hidden city of gold, deep in the mountains, cut off from the rest of the world.
+
+Shangri-La.

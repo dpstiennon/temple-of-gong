@@ -1,1 +1,0 @@
-You circle behind the temple, where ceremonial supplies are stacked in an open courtyard. Robes, banners, drums—and masks, piled in baskets. A guard stands nearby but his attention is on the festival procession passing in the street. You grab a mask at random—a snarling demon face—and retreat into the shadows to put it on.

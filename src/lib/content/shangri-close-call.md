@@ -1,1 +1,0 @@
-The patrol captain gestures to his men. They're moving toward you, cutting through the crowd with purpose. Someone has noticed something—your shoes, your gait, the way you hold yourself. You don't have time to think. Ahead, a gong-maker's shop with its door ajar. To your left, an iron grate covering a cistern, slightly askew. You have seconds to choose.
