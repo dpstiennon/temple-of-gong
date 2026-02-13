@@ -14,4 +14,4 @@ He lets that sink in.
 
 "And I don't think they're planning to keep us around until the snow melts."
 
-You reassure Jonah that you'll be back tonight, and bust him out under cover of darkness.
+You reassure Jonah that you'll find a way to bust him out.

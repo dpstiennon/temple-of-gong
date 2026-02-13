@@ -20,7 +20,6 @@ import jonahCellContent from "./content/jonah-cell.md?raw";
 import guardDistractedContent from "./content/guard-distracted.md?raw";
 import templePrisonContent from "./content/temple-prison.md?raw";
 import prisonWaitContent from "./content/prison-wait.md?raw";
-import prisonEscapeContent from "./content/prison-escape.md?raw";
 import rescueComicContent from "./content/rescue-comic.md?raw";
 import rescueFailContent from "./content/rescue-fail.md?raw";
 import rescueSporkContent from "./content/rescue-spork.md?raw";
@@ -468,14 +467,15 @@ export const storyPages: StoryPage[] = [
     dropZones: [
       {
         id: "use-spork-prison",
-        description: "The stone walls are ancient, the mortar crumbling",
-        acceptsItemId: "titanium-spork",
+        description:
+          "The cell door latch and Jonah's chain pins look like they'd yield to something sturdy and metal",
+        acceptsItemId: "spork",
         consumeItem: false,
         hiddenLink: {
-          targetPageId: "prison-escape",
-          text: "Dig through the wall",
+          targetPageId: "rescue-spork",
+          text: "Use the spork on the locks",
           revealMessage:
-            "The titanium spork bites into the ancient mortar. This might actually work.",
+            "The titanium catches the torchlight. Thin enough, strong enough, metal enough.",
         },
       },
     ],
@@ -488,13 +488,7 @@ export const storyPages: StoryPage[] = [
     dropZones: [],
     ending: "death",
   },
-  {
-    id: "prison-escape",
-    title: "Escape!",
-    content: prisonEscapeContent,
-    links: [{ targetPageId: "temple-escape", text: "Run!" }],
-    dropZones: [],
-  },
+
   {
     id: "rescue-comic",
     title: "The Rescue",
