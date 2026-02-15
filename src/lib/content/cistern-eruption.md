@@ -20,9 +20,11 @@ You reach the main cistern chamber just as the carved stone buttresses begin to 
 
 The plug blows.
 
-The sound is beyond sound. A column of superheated steam erupts from below, catches the slab, catches you, and hurls everything upward through the cistern shaft like a cork from a champagne bottle. Stone walls blur past. The iron grate that you crawled through hours ago disintegrates. Daylight hits you like a flashbang. You're still accelerating.
+The sound is beyond sound. A column of superheated steam erupts from below, catches the slab, catches you, and hurls everything upward through the cistern shaft like a cork from a champagne bottle. Stone walls blur past.  You find yourself staring up at the pre-dawn sky, and You're still accelerating.
 
 You clear the valley. You clear the cliffs. You are riding a slab of ancient masonry on a pillar of volcanic steam hundreds of feet above the Himalayas, and the only thought your brain can assemble is: *Bob was right. This was insane.*
+
+![Boom](/boom.png)
 
 The steam gives out. The slab arcs. For one weightless moment at the apex, you can see everything—the hidden valley below, the ring of mountains, and directly ahead, the Temple of Gong perched on its impossible cliff.
 

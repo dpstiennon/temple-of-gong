@@ -4,7 +4,7 @@ Bob's shoulders sag with relief. "Smart," he says. "Smart choice. Come on. Let's
 
 You go back to camp. Bob shows you where the best mushrooms grow. They're actually pretty good.
 
-Days pass. Weeks. You and Bob become something like friends—the kind of friendship born not of shared interests but of shared circumstances and a mutual understanding that certain topics are better left unexplored. You don't ask about the fork. He doesn't bring it up. Some nights you think you hear him sharpening something in the dark, but you've learned to sleep through it.
+Days pass. Weeks. You and Bob become something like friends—the kind of friendship born not of shared interests but of shared circumstances and a mutual understanding that certain topics are better left unexplored. You don't ask about the fork. He doesn't bring it up.
 
 You carve your own calendar into the wall, next to his. You learn the tunnels. You learn which water channels carry the warmest water, and which pools are deep enough to bathe in. You learn to catch the blind cave fish that swim in the lower cisterns, and to cook them over the volcanic vents.
 

@@ -10,6 +10,6 @@ You look at the plug. You look at the column of steam. You think about Jonah, ch
 
 You think about what happens when you seal a geyser.
 
-Bob follows your gaze to the stone and the fissure, and his expression changes. "Oh no," he says. "No, no, no. That thing is there for maintenance. You roll that in and the steam has nowhere to go. The pressure—"
+Bob follows your gaze to the stone and the fissure, and his expression changes. "Oh no," he says. "No, no, no. Are you crazy? That thing is there for maintenance. You roll that in and the steam has nowhere to go. The pressure—"
 
 "Yes," you say. "The pressure."

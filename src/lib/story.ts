@@ -828,7 +828,7 @@ export const storyPages: StoryPage[] = [
     title: "The Volcanic Vents",
     content: cisternVentsContent,
     links: [
-      { targetPageId: "cistern-stay", text: "Nah, that's crazy" },
+      { targetPageId: "cistern-stay", text: "Nah, Bob's right. That's crazy" },
       { targetPageId: "cistern-eruption", text: "Plug the vent" },
     ],
     dropZones: [],
@@ -839,7 +839,7 @@ export const storyPages: StoryPage[] = [
     content: cisternStayContent,
     links: [],
     dropZones: [],
-    ending: "death",
+    ending: "complete",
   },
   {
     id: "cistern-eruption",
@@ -852,9 +852,7 @@ export const storyPages: StoryPage[] = [
     id: "cistern-landing",
     title: "The Courtyard",
     content: cisternLandingContent,
-    links: [
-      { targetPageId: "escape-zeppelin", text: "Find somewhere to hide" },
-    ],
+    links: [{ targetPageId: "escape-zeppelin", text: "Follow Jonah" }],
     dropZones: [],
   },
 ];
