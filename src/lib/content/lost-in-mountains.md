@@ -4,4 +4,4 @@ Wow, it's chilly up here!  As the day wears on and the temperature drops, you st
 
 But when you try to retrace your steps, you realize that the thing you've been been following isn't exactly a path. You think this rock looks familiar, but did you turn left here, or right?  All the ridges look the same in the fading light.
 
-The temperature drops some more. By morning, you are a footnote in someone else's adventure.
+The temperature continues to drop.  You do not survive the night.

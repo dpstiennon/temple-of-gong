@@ -191,7 +191,7 @@ export const storyPages: StoryPage[] = [
         consumeItem: false,
         hiddenLink: {
           targetPageId: "temple-monks",
-          text: "Ask the monks about the temple in the photograph",
+          text: "Ask the monks about the temple",
           revealMessage:
             "The monk's expression grows thoughtful as he studies the image on the postcard.",
         },
@@ -271,7 +271,7 @@ export const storyPages: StoryPage[] = [
       { targetPageId: "temple-idol", text: "Explore the main building" },
       {
         targetPageId: "temple-gift-shop",
-        text: "Explore the unremarkable side building",
+        text: "Explore the side buildings",
       },
       {
         targetPageId: "temple-perimeter",
@@ -608,7 +608,10 @@ export const storyPages: StoryPage[] = [
     title: "The Descent",
     content: templePerimeterDescentContent,
     links: [
-      { targetPageId: "shangri-declare", text: "Approach the city openly" },
+      {
+        targetPageId: "shangri-declare",
+        text: "Approach the city and ask for help",
+      },
       { targetPageId: "shangri-hide", text: "Hide and observe" },
     ],
     dropZones: [],

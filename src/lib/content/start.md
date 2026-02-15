@@ -1,6 +1,6 @@
 Of course, you are not the type to abandon a friend in need. You've canceled your appointments, packed a weathered rucksack, and booked the first flight east. Now, after twenty hours of cramped seats and turbulent skies, you find yourself stepping off a plane into the thin mountain air of Kathmandu.
 
-Your only clue is the postcard itself. The image on the front shows a stone temple perched impossibly high in the Himalayas, its tiered roofs dusted with snow. But what catches your eye is what stands in the foreground: an immense golden gong, at least the height of a man. Embossed in its gleaming center is the face of a monkey—ancient, knowing, its expression caught between mischief and menace.
+Your only clue is the postcard itself. The image on the front shows a stone temple perched impossibly high in the Himalayas, its tiered roofs dusted with snow. But what catches your eye is what stands in the foreground: an immense golden gong, at least the height of a man. Embossed in its gleaming center is the face of a monkey, its expression one of menace
 
 ![The Postcard](/Postcard.png)
 
