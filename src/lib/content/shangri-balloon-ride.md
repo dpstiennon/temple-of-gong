@@ -20,7 +20,11 @@ You haul, hand over hand, until Jonah rolls onto the platform beside you. The wh
 
 The balloon carries you both out over the peaks. Behind you, the gongs ring out—dozens of them, then hundreds, the Festival of Ten Thousand Gongs beginning in chaos instead of ceremony.  Then a concussion of sound as the mighty cymbals of the idol of Gong crash together.
 
-Jonah lies on his back on the platform, breathing hard, staring up at the painted face of Gong glowing above you both in the starlight. Then he laughs.
+For a moment, silence. Then a low rumble rolls across the peaks—not thunder, not gongs. Stone. The entire mountainside below the temple shifts, slowly at first, then all at once. A white curtain of snow and rock slides down and across the valley mouth, swallowing the mountain path, burying the gates, sealing the temple and Shangri-La behind tons of debris. From up here it looks almost gentle. 
+
+Jonah watches it with you, chin propped on the edge of the platform, the wind pulling at his hair. Neither of you says anything for a while. The dust cloud rises and drifts south. Where the path was, there is now just mountain.
+
+Then Jonah rolls onto his back, staring up at the painted face of Gong glowing above you both in the starlight. He laughs.
 
 "Is that a spork? A Titanium spork?"
 
