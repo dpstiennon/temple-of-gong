@@ -24,9 +24,13 @@ You gesture. You mime searching. You point to yourself, then outward—*I'm look
 
 You nod.
 
-The chalk scratches faster now. When he turns the board around, the letters are large and jagged.
+The chalk scratches faster now.
 
-*HE IS AT THE CLIFFTOP. THEY THROW HIM AT DAWN.*
+*TODAY IS THE FESTIVAL OF SILENCE. TOMORROW, THE FESTIVAL OF TEN THOUSAND GONGS. THE SACRIFICE IS ALWAYS AT DAWN, WHEN THE GONGS BEGIN.*
+
+He erases. When he turns the board around, the letters are large and jagged.
+
+*THEY THROW HIM FROM THE CLIFFTOP AT FIRST LIGHT.*
 
 Dawn. That's hours from now. That's no time at all.
 

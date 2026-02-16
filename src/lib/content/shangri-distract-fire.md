@@ -1,4 +1,4 @@
-Dorje turns the matchbox over in his hands. He slides it open, examines the red-tipped heads, strikes one against the side. The flare makes him flinch. He stares at the tiny flame with the expression of a man seeing a magic trick for the first time.
+Dorje turns the matchbox over in his hands. He slides it open, examines the red-tipped heads, strikes one against the side. The flare makes him flinch. 
 
 He blows it out. Nods once. Writes on the board:
 

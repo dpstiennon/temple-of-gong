@@ -690,8 +690,7 @@ export const storyPages: StoryPage[] = [
         hiddenLink: {
           targetPageId: "shangri-distract-comic",
           text: "Hand Dorje the comic book",
-          revealMessage:
-            "Dorje opens the comic book. His mouth twitches. His shoulders shake.",
+          revealMessage: "Dorje opens the comic book. His mouth twitches.",
         },
       },
     ],

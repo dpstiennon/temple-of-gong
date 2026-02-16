@@ -4,7 +4,7 @@ Shangri-La falls. The bonfires shrink to points of light. The masked crowds beco
 
 The balloon rises along the cliff face. The updraft from the valley catches it, pressing you against the basket's woven wall, and the world tilts as Gong's enormous painted face swings overhead. You pass the monastery walls. You pass the temple spires. The air thins and the stars are impossibly close.
 
-![The Great Balloon of Gong](/Gong%20Balloon.png)
+![The Great Balloon of Gong](/BalloonRescue.png)
 
 And there, at the clifftop, lit by torchlight and the first gray suggestion of dawn: Jonah.
 

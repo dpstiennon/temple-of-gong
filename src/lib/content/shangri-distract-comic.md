@@ -1,4 +1,4 @@
-Dorje studies the comic book. He turns the pages slowly, one at a time. The garish colors. The cartoon ducks in their sailor suits, getting into improbable scrapes. His mouth twitches. He covers it with his hand. His shoulders shake.
+Dorje studies the comic book. He turns the pages slowly, one at a time. The bright colors. The cartoon ducks getting into improbable scrapes. His mouth twitches. He covers it with his hand. His shoulders shake.
 
 He composes himself, sets the comic down, and writes on the board:
 
