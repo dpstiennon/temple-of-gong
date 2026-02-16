@@ -1,7 +1,9 @@
-The Great Balloon of Gong looms above you, tugging at its tethers like a living thing. Gong's painted face ripples in the updraft, the golden eyes shifting, the bared teeth seeming to grin. The woven basket hangs just above the ground, swaying gently. Inside it, a coil of rope—Dorje must have placed it there earlier, before any of this began. The man planned ahead.
+Up close, it looks even more like a hot air balloon. Because it is one.
 
-Four hemp tethers, each as thick as your wrist, anchor the balloon to iron stakes driven into the cobblestones. The knots are ceremonial—elaborate, layered, designed to be beautiful rather than practical. But hemp is hemp. You can't untie them. You can't break them with your hands.
+The fire isn't just a bonfire on the ground—it's burning in an iron grate mounted on a wooden platform, the heat channeled upward through the balloon's open mouth by a silk skirt. The whole assembly is suspended a couple feet in the air. This wasn't built as a religious icon that happens to float. Someone long ago built a hot air balloon and put a monkey's face on it.
 
-The distraction won't last forever. Already you can hear shouts from across the square, the tone shifting from confusion to anger. Someone will notice the empty guard post. Someone will notice you.
+Four hemp tethers, each as thick as your wrist, anchor the balloon to iron stakes driven into the cobblestones. The knots are simple enough—nothing ceremonial, just sturdy half-hitches—but the rope is so thick you can't find a good purchase for your fingers. You pull. You twist. You try to work a loop free. The hemp doesn't give. 
 
-You need to cut these ropes.
+The distraction won't last forever. Already you can hear shouts from across the square, the tone shifting from confusion to anger.
+
+If only you had some sort of sturdy metal tool you could use to pry the knots apart...

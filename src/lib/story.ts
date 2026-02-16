@@ -738,9 +738,9 @@ export const storyPages: StoryPage[] = [
         consumeItem: true,
         hiddenLink: {
           targetPageId: "shangri-balloon-ride",
-          text: "Cut the tethers with the spork",
+          text: "Use the spork to untie the knots",
           revealMessage:
-            "The titanium edge bites into the hemp. One tether parts. Then another. Then a third. The fourth screams under the strain and snaps on its own.",
+            "One knot parts. Then another. Then a third. The fourth screams under the strain and snaps on its own.",
         },
       },
     ],
