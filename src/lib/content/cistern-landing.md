@@ -2,7 +2,7 @@ The slab hits the courtyard of the Temple of Gong at an angle, skipping once off
 
 You tumble off. Your ears are ringing. You're covered in dust and mineral deposits and your eyebrows may be singed. But you're alive, and you're standing in the temple courtyard, and the first thing you see—the very first thing—is Jonah.
 
-He's ten feet away, kneeling at the edge of the cliff. The monks are arrayed behind him in ceremonial robes, mid-chant, gongs raised. The high priest has one hand on Jonah's shoulder, ready to push.
+He's ten feet away, kneeling at the edge of the cliff. The monks are arrayed behind him in ceremonial robes, gongs raised. The high priest has one hand on Jonah's shoulder, ready to push.
 
 Every single one of them is staring at you. At the slab. At the trench. At the smoldering ruin of the ornamental garden. The chanting has stopped.
 

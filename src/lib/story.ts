@@ -27,7 +27,7 @@ import templeEscapeContent from "./content/temple-escape.md?raw";
 import escapePathContent from "./content/escape-path.md?raw";
 import escapeZeppelinContent from "./content/escape-zeppelin.md?raw";
 import escapeZeppelinEndingContent from "./content/escape-zeppelin-ending.md?raw";
-import zeppelinFallContent from "./content/zeppelin-fall.md?raw";
+import templeFestivalContent from "./content/temple-festival.md?raw";
 import shangriLaContent from "./content/shangri-la.md?raw";
 import bellUsedContent from "./content/bell-used.md?raw";
 import templePerimeterContent from "./content/temple-perimeter.md?raw";
@@ -223,7 +223,7 @@ export const storyPages: StoryPage[] = [
     links: [
       {
         targetPageId: "lost-in-mountains",
-        text: "The power of friendship will guide you!  Press on!",
+        text: "Press on! What's the worst that could happen?",
       },
       { targetPageId: "kathmandu-temple", text: "Return to Kathmandu" },
     ],
@@ -463,7 +463,12 @@ export const storyPages: StoryPage[] = [
     id: "temple-prison",
     title: "The Prison Cells",
     content: templePrisonContent,
-    links: [{ targetPageId: "prison-wait", text: "Wait and see what happens" }],
+    links: [
+      {
+        targetPageId: "prison-wait",
+        text: "Wait for the Festival of Ten Thousand Gongs",
+      },
+    ],
     dropZones: [
       {
         id: "use-spork-prison",
@@ -513,7 +518,12 @@ export const storyPages: StoryPage[] = [
     id: "rescue-fail",
     title: "Caught!",
     content: rescueFailContent,
-    links: [{ targetPageId: "prison-wait", text: "Wait and see what happens" }],
+    links: [
+      {
+        targetPageId: "prison-wait",
+        text: "Wait for the Festival of Ten Thousand Gongs",
+      },
+    ],
     dropZones: [
       {
         id: "use-spork-rescue",
@@ -579,11 +589,12 @@ export const storyPages: StoryPage[] = [
     ending: "complete",
   },
   {
-    id: "zeppelin-fall",
-    title: "The Fall",
-    content: zeppelinFallContent,
-    links: [{ targetPageId: "shangri-la", text: "Look around" }],
+    id: "temple-festival",
+    title: "The End",
+    content: templeFestivalContent,
+    links: [],
     dropZones: [],
+    ending: "death",
   },
 
   // === TEMPLE PERIMETER / ROPE LADDER ===

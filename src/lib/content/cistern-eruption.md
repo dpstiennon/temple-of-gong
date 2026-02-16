@@ -10,7 +10,7 @@ For a moment, everything is silent. The first real silence you've heard since en
 
 Then the ground shudders.
 
-A low vibration, more felt than heard, rising up through the soles of your feet and into your chest. The mineral deposits on the walls begin to crack and flake. A stalactite drops from the ceiling and shatters on the stone floor.
+A low vibration, more felt than heard, rising up through the soles of your feet. The mineral deposits on the walls begin to crack and flake. A stalactite drops from the ceiling and shatters on the stone floor.
 
 Bob's eyes are very wide. "Run," he says, and for once you're in complete agreement. He bolts down a side passage—deeper into the tunnels, away from you, a man who knows exactly which direction is safest because he's spent thirty-one years mapping every inch of this place.
 
