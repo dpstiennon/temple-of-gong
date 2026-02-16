@@ -139,6 +139,19 @@
         font-style: italic;
     }
 
+    .content :global(.hint-mobile) {
+        display: none;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+        .content :global(.hint-desktop) {
+            display: none;
+        }
+        .content :global(.hint-mobile) {
+            display: block;
+        }
+    }
+
     .content :global(strong) {
         font-weight: 600;
         color: #e0e0e0;
