@@ -6,4 +6,4 @@ The cells are exactly as grim as you'd expect. Cold stone, iron bolts, the smell
 
 You slide the viewing slot open. Jonah's face appears, squinting, hopeful, and then breaking into the widest grin you've ever seen on a man in chains.
 
-"You absolute *legend*," he says. "Get me out of here and I will write a spoken-word epic about you. It will have seventeen verses. There will be didgeridoo."
+"You absolute *legend*," he says. "Get me out of here and I will write a *song* about you. It will have throat singing _and_ didgeridoo."

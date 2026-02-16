@@ -1,10 +1,6 @@
 <script lang="ts">
     import type { InventoryItem } from "../types";
-    import {
-        startDrag,
-        endDrag,
-        updateTouchPos,
-    } from "../dragState.svelte";
+    import { startDrag, endDrag, updateTouchPos } from "../dragState.svelte";
 
     interface Props {
         item: InventoryItem;
@@ -136,7 +132,11 @@
     }
 </script>
 
-<div class="item-swipe-container" bind:this={itemEl}>
+<div
+    class="item-swipe-container"
+    class:touch-dragging={isTouchDragging}
+    bind:this={itemEl}
+>
     <div class="swipe-track" class:ready={swipeOffset >= SWIPE_THRESHOLD}>
         <span>Use &#9658;</span>
     </div>
@@ -162,6 +162,10 @@
         position: relative;
         overflow: hidden;
         border-radius: 8px;
+    }
+
+    .item-swipe-container.touch-dragging {
+        visibility: hidden;
     }
 
     .swipe-track {

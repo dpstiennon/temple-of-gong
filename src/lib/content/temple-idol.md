@@ -6,8 +6,8 @@ And in the center of it all, the idol of Gong.
 
 ![The Idol of Gong](/Gong.png)
 
-A fifty-foot brass monkey, its surface darkened with centuries of incense smoke and lamp oil. Its hands are outstretched, palms up, and in each palm it holds an enormous cymbal—two discs of hammered bronze, each wider than you are tall, suspended in the air as if frozen mid-clap. The space between them hums with something you can feel in your teeth.
+An eighty-foot brass monkey, its surface darkened with centuries of incense smoke and lamp oil. Its hands are outstretched, palms up, and in each palm it holds an enormous cymbal—two discs of hammered bronze, each wider than the height of three men, suspended in the air as if frozen mid-clap. The space between them almost hums.
 
-The face is the worst part. Monstrous, yes.  But also serene: The expression of something that has been waiting a very long time and is in no particular hurry. The brass has been polished smooth where monks have touched it over the centuries.
+The face is the worst part. Monstrous, yes.  But also serene: A face that could sit in peace for ages and then erupt into sudden violence. The brass has been polished smooth where monks have touched it over the centuries.
 
 Somewhere deep in the walls, you hear the faint creak of ancient mechanisms—gears, or pulleys, or something older. The sound comes and goes, rhythmic, almost like breathing.
