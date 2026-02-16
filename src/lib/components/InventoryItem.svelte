@@ -1,6 +1,10 @@
 <script lang="ts">
     import type { InventoryItem } from "../types";
-    import { startDrag, endDrag } from "../dragState.svelte";
+    import {
+        startDrag,
+        endDrag,
+        updateTouchPos,
+    } from "../dragState.svelte";
 
     interface Props {
         item: InventoryItem;
@@ -24,31 +28,61 @@
         endDrag();
     }
 
-    // --- Swipe-to-use (touch) ---
+    // --- Touch handling (swipe-to-use + touch drag) ---
     let itemEl: HTMLElement;
-    let swipeStartX = 0;
+    let touchStartX = 0;
+    let touchStartY = 0;
     let swipeOffset = $state(0);
     let isSwiping = $state(false);
+    let isTouchDragging = $state(false);
+    let touchMode: "idle" | "deciding" | "swiping" | "dragging" = "idle";
     const SWIPE_THRESHOLD = 80;
     const SWIPE_MAX = 120;
+    const DIRECTION_THRESHOLD = 10;
 
     function handleTouchStart(e: TouchEvent) {
         const touch = e.touches[0];
-        swipeStartX = touch.clientX;
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
         swipeOffset = 0;
         isSwiping = false;
+        isTouchDragging = false;
+        touchMode = "deciding";
     }
 
     function handleTouchMove(e: TouchEvent) {
         const touch = e.touches[0];
-        const deltaX = touch.clientX - swipeStartX;
+        const deltaX = touch.clientX - touchStartX;
+        const deltaY = touch.clientY - touchStartY;
 
-        if (deltaX > 0) {
+        if (touchMode === "deciding") {
+            const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+            if (distance < DIRECTION_THRESHOLD) return;
+
+            // Primarily rightward = swipe, anything else = drag
+            if (deltaX > 0 && deltaX > Math.abs(deltaY)) {
+                touchMode = "swiping";
+                isSwiping = true;
+            } else {
+                touchMode = "dragging";
+                isTouchDragging = true;
+                startDrag(item);
+                updateTouchPos(touch.clientX, touch.clientY);
+                e.preventDefault();
+                return;
+            }
+        }
+
+        if (touchMode === "swiping") {
+            if (deltaX > 0) {
+                e.preventDefault();
+                swipeOffset = Math.min(deltaX, SWIPE_MAX);
+            } else {
+                swipeOffset = 0;
+            }
+        } else if (touchMode === "dragging") {
             e.preventDefault();
-            isSwiping = true;
-            swipeOffset = Math.min(deltaX, SWIPE_MAX);
-        } else {
-            swipeOffset = 0;
+            updateTouchPos(touch.clientX, touch.clientY);
         }
     }
 
@@ -63,18 +97,42 @@
         };
     });
 
-    function handleTouchEnd() {
-        if (swipeOffset >= SWIPE_THRESHOLD) {
-            itemEl.dispatchEvent(
-                new CustomEvent("swipeuse", {
-                    bubbles: true,
-                    detail: { item },
-                }),
+    function handleTouchEnd(e: TouchEvent) {
+        if (touchMode === "swiping") {
+            if (swipeOffset >= SWIPE_THRESHOLD) {
+                itemEl.dispatchEvent(
+                    new CustomEvent("swipeuse", {
+                        bubbles: true,
+                        detail: { item },
+                    }),
+                );
+            }
+        } else if (touchMode === "dragging") {
+            const lastTouch = e.changedTouches[0];
+            const targetEl = document.elementFromPoint(
+                lastTouch.clientX,
+                lastTouch.clientY,
             );
+            const storyArea = document.querySelector(".story-area");
+            if (
+                storyArea &&
+                targetEl &&
+                (storyArea === targetEl || storyArea.contains(targetEl))
+            ) {
+                storyArea.dispatchEvent(
+                    new CustomEvent("touchdrop", {
+                        bubbles: false,
+                        detail: { item },
+                    }),
+                );
+            }
+            endDrag();
         }
 
         isSwiping = false;
+        isTouchDragging = false;
         swipeOffset = 0;
+        touchMode = "idle";
     }
 </script>
 
@@ -84,7 +142,7 @@
     </div>
     <div
         class="inventory-item"
-        class:dragging={isDragging}
+        class:dragging={isDragging || isTouchDragging}
         class:swiping={isSwiping}
         draggable="true"
         style:transform="translateX({swipeOffset}px)"
@@ -138,7 +196,7 @@
         border-radius: 8px;
         cursor: grab;
         user-select: none;
-        touch-action: pan-y;
+        touch-action: none;
     }
 
     .inventory-item:not(.swiping) {

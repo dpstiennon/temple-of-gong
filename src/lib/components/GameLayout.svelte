@@ -165,6 +165,15 @@
     <aside class="inventory-area">
         <Inventory />
     </aside>
+
+    {#if dragState.touchPos && dragState.draggedItem}
+        <div
+            class="touch-drag-ghost"
+            style="left: {dragState.touchPos.x}px; top: {dragState.touchPos.y}px;"
+        >
+            {dragState.draggedItem.name}
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -200,6 +209,21 @@
 
     .error a {
         color: #a8d8c8;
+    }
+
+    .touch-drag-ghost {
+        position: fixed;
+        pointer-events: none;
+        transform: translate(-50%, -120%);
+        padding: 0.5rem 1rem;
+        background: rgba(42, 42, 62, 0.9);
+        border: 1px solid #5a5a8e;
+        border-radius: 8px;
+        color: #e0e0e0;
+        font-size: 0.9rem;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        white-space: nowrap;
     }
 
     @media (max-width: 768px) {
