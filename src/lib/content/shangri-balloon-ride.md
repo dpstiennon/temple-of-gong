@@ -14,14 +14,14 @@ Then one of them looks up.
 
 The reaction ripples outward. First one monk, then five, then all of them—staring at the Great Face of Gong drifting past the clifftop with a stranger lying flat on its platform. Some of them drop to the ground, faces pressed to the stone. Others begin hammering their gongs in a frenzy, the sound rolling across the mountains like thunder. The high priest stands frozen, mouth open, hand still resting on empty air where Jonah's shoulder was a moment ago.
 
-Because Jonah is already moving. You grab one of the trailing tether ropes and hurl it toward the cliff edge. It's not a good throw. But Jonah knows what to do.  He backs up and takes a running leap over the cliff edge.  For a second His legs kick in the air, a thousand feet above the valley floor, and then he catches the rope. 
+Because Jonah is already moving. You grab one of the trailing tether ropes and hurl it toward the cliff edge. It's not a good throw, but Jonah knows what to do.  He backs up and takes a running leap over the edge.  For a second His legs swing in the air, a thousand feet above the valley floor, and then he catches the rope. 
 
-For one sickening moment he swings free over the void—then the rope goes taut and you haul, hand over hand, and Jonah crashes onto the platform beside you. The whole rig shudders. The grate slides. A plank creaks in a way that suggests it has opinions about the additional weight.
+You haul, hand over hand, until Jonah rolls onto the platform beside you. The whole rig shudders. A plank creaks in a way that suggests it has opinions about the additional weight.
 
-The balloon carries you both out over the peaks. Behind you, the gongs ring out—dozens of them, then hundreds, the Festival of Ten Thousand Gongs beginning in chaos instead of ceremony.
+The balloon carries you both out over the peaks. Behind you, the gongs ring out—dozens of them, then hundreds, the Festival of Ten Thousand Gongs beginning in chaos instead of ceremony.  Then a concussion of sound as the mighty cymbals of the idol of Gong crash together.
 
-Jonah lies on his back on the platform, breathing hard, staring up at the painted face of Gong glowing above you both in the starlight. Then he looks at you.
+Jonah lies on his back on the platform, breathing hard, staring up at the painted face of Gong glowing above you both in the starlight. Then he laughs.
 
-"Is that a spork?"
+"Is that a spork? A Titanium spork?"
 
 Below, the mountains. Above, the dawn. Ahead, wherever the wind takes you.
