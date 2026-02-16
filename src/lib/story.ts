@@ -286,9 +286,9 @@ export const storyPages: StoryPage[] = [
         consumeItem: true,
         hiddenLink: {
           targetPageId: "bell-used",
-          text: "The monks seize you",
+          text: "Ring the bell",
           revealMessage:
-            "The clear ring of the bell echoes across the courtyard. Every monk freezes.",
+            "The clear ring of the bell echoes across the courtyard.",
         },
       },
       {
@@ -387,9 +387,9 @@ export const storyPages: StoryPage[] = [
         consumeItem: true,
         hiddenLink: {
           targetPageId: "bell-used",
-          text: "The monks seize you",
+          text: "Ring the bell",
           revealMessage:
-            "The bell's ring echoes beneath the giant brass monkey. Every monk freezes.",
+            "The bell's ring echoes beneath the giant brass monkey.",
         },
       },
     ],
