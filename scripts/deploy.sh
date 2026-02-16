@@ -65,8 +65,14 @@ echo
 
 # Sync to S3
 echo -e "${YELLOW}Uploading to S3...${NC}"
+# Hashed assets get long cache (Vite content-hashes the filenames)
 aws s3 sync dist/ "s3://$BUCKET_NAME" \
     --delete \
+    --cache-control "max-age=31536000, immutable" \
+    --profile "$AWS_PROFILE"
+# Re-upload index.html with no-cache so users always get the latest version
+aws s3 cp dist/index.html "s3://$BUCKET_NAME/index.html" \
+    --cache-control "no-cache" \
     --profile "$AWS_PROFILE"
 echo -e "${GREEN}Upload complete${NC}"
 echo
