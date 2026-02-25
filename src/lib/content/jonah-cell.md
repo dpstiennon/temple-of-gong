@@ -8,7 +8,7 @@ He ended up here. The monks seemed friendly enough. They fed him, gave him a bed
 
 He rattles his chains for emphasis.
 
-"But listen. The festival tomorrow—the Festival of Ten Thousand Gongs—it's not just gongs. You saw that big idol? The one with the cymbals?" He leans forward as far as the chains allow. "They've got some kind of mechanism in the walls. Gears, pulleys, counterweights. Tomorrow they clash those cymbals together. The sound—" he shakes his head. "It triggers an avalanche. Every year. Buries the mountain path, seals the temple off until summer."
+"But listen. The festival tomorrow—the Festival of Ten Thousand Gongs—it's not just gongs. You saw that big idol? The one with the cymbals?" He leans forward as far as the chains allow. "They've got some kind of mechanism in inside it, with gears and pulleys and counterweights. Tomorrow when they activate it, it clashes those cymbals together. The sound—" he shakes his head. "It triggers an avalanche, every year. It's going to bury the mountain path, and seal the temple off until summer."
 
 He lets that sink in.
 

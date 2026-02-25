@@ -1,6 +1,6 @@
 The last tether parts with a loud snap. The platform lurches skyward and you throw yourself flat, fingers finding the edge of the wooden planking as the cobblestones drop away beneath you. The iron grate shifts and sparks scatter into the dark. You press yourself against the boards and hold on.
 
-Shangri-La falls. The bonfires shrink to points of light. The masked crowds become a mosaic of upturned faces, gold and crimson and lacquered wood. You catch one last glimpse of Dorje's shop—the door still open, the lamp still burning.
+Shangri-La falls away beneath you. The bonfires shrink to points of light. The masked crowds become a mosaic of upturned faces, gold and crimson and lacquered wood. You catch one last glimpse of Dorje's shop—the door still open, the lamp still burning.
 
 The balloon rises along the cliff face. The updraft from the valley catches it, and the platform tilts sickeningly as Gong's enormous painted face swings overhead. You can see the temple now: far above you at first, but drawing closer, closer, as if it were descending to greet you.
 
@@ -14,7 +14,7 @@ Jonah kneels at the cliffs edge. The monks are arrayed behind him in ceremonial 
 
 The reaction ripples outward. First one monk, then five, then all of them—staring at the Great Face of Gong now looming overhead. Some of them drop to the ground, faces pressed to the stone. Others begin hammering their gongs in a frenzy. The high priest stands frozen, mouth open, hand still resting on empty air where Jonah's shoulder was a moment ago.
 
-Because Jonah is already moving. You grab one of the trailing tether ropes and hurl it toward the cliff edge. It's not a good throw, but Jonah knows what to do.  He backs up and takes a running leap over the edge.  For a second his legs swing in the air, a thousand feet above the valley floor, and then he catches the rope. 
+Because Jonah is already moving. You grab one of the trailing tether ropes and hurl it toward the cliff edge. It's not a good throw, but Jonah knows what to do.  He takes a running leap over the edge.  For a second his legs swing in the air, a thousand feet above the valley floor, and then he catches the rope. 
 
 You haul, hand over hand, until Jonah rolls onto the platform beside you. The whole rig shudders. A plank creaks in a way that suggests it has opinions about the additional weight.
 

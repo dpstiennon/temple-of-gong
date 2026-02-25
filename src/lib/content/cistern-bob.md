@@ -10,7 +10,7 @@ You can finally make out your guide.  A wiry man in his fifties, maybe sixties, 
 
 "Beautiful, isn't it?" Bob says. "The Shangri-La-ans are smart people.  They've got a whole system - use the volcanic vents down below to get heated running water for the whole city.  Talented engineers. Lovely culture." He pauses. "Murderous, though."
 
-He explains. Any outsider found in the valley is imprisoned until the next festival, then sacrificed—hurled off the cliff as an offering. It's been this way for centuries. The Shangri-La-ans are not cruel about it. They consider it a great honor. They have a nice ceremony. There are gongs.
+He explains. Any outsider found in the valley is imprisoned until the next festival, then sacrificed—carried up the temple above, and hurled off the cliff as an offering to the monkey god. It's been this way for centuries. They have a nice ceremony. There are gongs.
 
 Your friend Jonah, Bob says, is as good as dead.
 
