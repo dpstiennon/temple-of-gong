@@ -20,4 +20,4 @@ A whoosh of expanding gas. A click-click-click of a rigid frame springing into p
 
 You grab on. The ground falls away. The temple shrinks beneath you—monks spilling into the courtyard, gongs crashing, the great brass monkey glinting in the first light of dawn.
 
-"Got it off blimp.ly," Jonah shouts over the wind. "Kickstarter, technically. I was backer number fourteen. " He adjusts a valve near his hip. "The company folded, obviously. Never found product-market fit, but the product is *excellent*."
+"Got it off blimp.ly," Jonah shouts over the wind. "Kickstarter, technically. I was backer number fourteen. " He adjusts a valve near his hip. "The company folded, obviously, but the product was *excellent*."
